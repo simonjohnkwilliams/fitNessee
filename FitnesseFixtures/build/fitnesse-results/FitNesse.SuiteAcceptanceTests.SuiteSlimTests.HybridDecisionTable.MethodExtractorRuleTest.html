@@ -1,0 +1,1431 @@
+<html><head><title>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.MethodExtractorRuleTest</title><meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/><link rel='stylesheet' type='text/css' href='css/fitnesse.css'/><script src='javascript/jquery-1.11.3.min.js' type='text/javascript'></script><script src='javascript/fitnesse.js' type='text/javascript'></script></head><body><header><h2>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.MethodExtractorRuleTest</h2></header><article><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td>page</td>
+		<td>with content</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td colspan="2">@content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>nothing</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td colspan="2"></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given test page</td>
+		<td>page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td colspan="2">@page</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td>a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given slim test page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>!define TEST_SYSTEM {slim}</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">&lt;a href="@target"</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@source</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have creating link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have creating link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have creating link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should not contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should not contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td>text</td>
+		<td>in line</td>
+		<td>symbol</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>$IT</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>$@symbol=</td>
+		<td>line number containing</td>
+		<td colspan="3">@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should match</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should match</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page in debug mode</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test&amp;debug</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for suite</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?suite</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>its test results should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>test results for page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test ressults for page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>widget</td>
+		<td>wikiText</td>
+		<td>should render</td>
+		<td>htmlText</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>WidgetPage</td>
+		<td>with content</td>
+		<td colspan="2">@wikiText</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>WidgetPage</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@htmlText</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>the line</td>
+		<td>after</td>
+		<td>should come after</td>
+		<td>before</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo int</td>
+		<td>$@before</td>
+		<td colspan="2">&lt; $@after</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td colspan="3">pass</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo</td>
+		<td>pass</td>
+		<td>pass</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show collapsed</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show Symbol</td>
+		<td>result</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>then</td>
+		<td>pass</td>
+		<td>assertions pass,</td>
+		<td>fail</td>
+		<td>fail,</td>
+		<td>ignore</td>
+		<td>are ignored</td>
+		<td>exception</td>
+		<td>exceptions thrown</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="8">Assertions:&lt;[^&lt;]*@pass right, @fail wrong, @ignore ignored, @exception exceptions</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>Assertions:&lt;[^&lt;]*exceptions</td>
+		<td>contents</td>
+		<td colspan="6">0</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and cell</td>
+		<td>text</td>
+		<td>has result</td>
+		<td>result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">class="@result"&gt;@text&lt;</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>class="[^"]+"&gt;@text&lt;</td>
+		<td>contents</td>
+		<td>0</td>
+	</tr>
+</table>
+<br/><span class="meta">variable defined: TestSTART=@@@START: Test specific content</span>
+ <br/><span class="meta">variable defined: TestEND=@@@END: Test specific content</span>
+ <br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and TestSystem setup is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and setup content is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and test content is</td>
+		<td colspan="2">content</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>$IT</td>
+		<td>with content</td>
+		<td>$CONTENT @@@START: Test specific content@content@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>$IT</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>contents</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$HTML_Result=</td>
+		<td>found</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML input</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>pageHtml</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>$HTML_Input=</td>
+		<td>found</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td>get value</td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get collapsed executon log for page</td>
+		<td colspan="2">source</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?executionLog</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested and HTML is extracted</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>when page</td>
+		<td>@source</td>
+		<td colspan="2">is tested</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td colspan="4">get HTML result</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td colspan="4">get HTML input</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>Import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">fitnesse.fixtures</span></td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>Library</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">echo fixture</span></td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<br/><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Setup</p>
+	<div><br/><table>
+	<tr class="slimRowTitle">
+		<td>import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">fitnesse.testsystems.slim.tables</span></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Json Method Extractor Configuration                  _ _ _ _</td>
+		<td>configuration, example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Method Extractor</td>
+		<td>@configuration</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR=</td>
+		<td>findRule</td>
+		<td>@exampleColumnName</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2">$RR</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName=</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName=</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList=</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2">$TestMethodExtractorConfiguration</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR=</td>
+		<td>findRule</td>
+		<td>@exampleColumnName</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2">$RR</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName=</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName=</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList=</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table>
+<br/><br/></div>
+</div>
+<br/><br/><h3>Build a JSON configuration string</h3>
+<br/><h4>Hint: use this table to construct your Json expression.</h4>
+ <br/><table>
+	<tr class="slimRowTitle">
+		<td>script</td>
+		<td colspan="3"><span class="pass">Method Extractor</span></td>
+	</tr>
+	<tr class="slimRowColor5">
+		<td>#</td>
+		<td>Scope Pattern</td>
+		<td>Target Name</td>
+		<td>Parameter List</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td><span class="pass">add;</span></td>
+		<td>Cell\s+(\w+):(\d+)\s*</td>
+		<td>getRowColumn</td>
+		<td>$2,$1</td>
+	</tr>
+	<tr class="slimRowColor5">
+		<td colspan="4"># used a named group in the pattern</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td><span class="pass">add;</span></td>
+		<td>Named\s+Cell\s+(?<column>\w+):(?<row>\d+)\s*</td>
+		<td>getRowColumn</td>
+		<td>$row,$column</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td colspan="4"># used a fixed value as parameter</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td><span class="pass">add;</span></td>
+		<td>Header\s+Column\s+(\w+)\s*</td>
+		<td>getRowColumn</td>
+		<td>0,$1</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td colspan="4"># Default (match all pattern) catches every column name</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td><span class="pass">add;</span></td>
+		<td>.+</td>
+		<td>set</td>
+		<td>$0</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td colspan="4"># The first matching rule is used. The below will never be used as it comes after the default rule</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td><span class="pass">add;</span></td>
+		<td>Last.*</td>
+		<td>Unreachable</td>
+		<td></td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="ignore">show collapsed</td>
+		<td colspan="3" class="ignore">to Json</td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show collapsed</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">to Json</td>
+	<td>{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+{
+"Scope":"Cell\\s+(\\w+):(\\d+)\\s*",
+"TargetName":"getRowColumn",
+"Parameters":"$2,$1"
+}
+, {
+"Scope":"Named\\s+Cell\\s+(?&lt;column&gt;\\w+):(?&lt;row&gt;\\d+)\\s*",
+"TargetName":"getRowColumn",
+"Parameters":"$row,$column"
+}
+, {
+"Scope":"Header\\s+Column\\s+(\\w+)\\s*",
+"TargetName":"getRowColumn",
+"Parameters":"0,$1"
+}
+, {
+"Scope":".+",
+"TargetName":"set",
+"Parameters":"$0"
+}
+, {
+"Scope":"Last.*",
+"TargetName":"Unreachable",
+"Parameters":""
+}
+]
+}
+</td></tr>
+</table></td></tr>
+	<tr class="slimRowColor6">
+		<td>$TestMethodExtractorConfiguration&lt;-[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</td>
+		<td colspan="3">get fixture</td>
+	</tr>
+</table>
+<br/><h3>Test the above defined configuration</h3>
+<br/><h4>Hint: use this table to test your own definitions.</h4>
+<br/><table>
+	<tr>
+		<td colspan="3">Test Object Method Extractor Configuration</td>
+	</tr>
+	<tr>
+		<td>example column name</td>
+		<td>generated method name?</td>
+		<td>parameter list?</td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="ignore">hallo</td>
+		<td class="ignore"><span class="pass">set</span></td>
+		<td class="ignore"><span class="pass">[hallo]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="3"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$TestMethodExtractorConfiguration-&gt;[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[set:[hallo]]</td>
+		<td>findRule</td>
+		<td>hallo</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[set:[hallo]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[hallo]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">Cell A:5</td>
+		<td class="ignore"><span class="pass">getRowColumn</span></td>
+		<td class="ignore"><span class="pass">[5, A]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="3"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$TestMethodExtractorConfiguration-&gt;[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[getRowColumn:[5, A]]</td>
+		<td>findRule</td>
+		<td>Cell A:5</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[getRowColumn:[5, A]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getRowColumn]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getRowColumn]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[5, A]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">Named Cell BX:451</td>
+		<td class="ignore"><span class="pass">getRowColumn</span></td>
+		<td class="ignore"><span class="pass">[451, BX]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="3"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$TestMethodExtractorConfiguration-&gt;[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[getRowColumn:[451, BX]]</td>
+		<td>findRule</td>
+		<td>Named Cell BX:451</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[getRowColumn:[451, BX]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getRowColumn]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getRowColumn]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[451, BX]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">Header Column F</td>
+		<td class="ignore"><span class="pass">getRowColumn</span></td>
+		<td class="ignore"><span class="pass">[0, F]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="3"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$TestMethodExtractorConfiguration-&gt;[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[getRowColumn:[0, F]]</td>
+		<td>findRule</td>
+		<td>Header Column F</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[getRowColumn:[0, F]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getRowColumn]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getRowColumn]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[0, F]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">Cell 7</td>
+		<td class="ignore"><span class="pass">set</span></td>
+		<td class="ignore"><span class="pass">[Cell 7]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="3"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$TestMethodExtractorConfiguration-&gt;[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[set:[Cell 7]]</td>
+		<td>findRule</td>
+		<td>Cell 7</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[set:[Cell 7]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[Cell 7]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">Last and Least</td>
+		<td class="ignore"><span class="pass">set</span></td>
+		<td class="ignore"><span class="pass">[Last and Least]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="3"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Object Method Extractor Configuration                  _ _ _</td>
+		<td>example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$TestMethodExtractorConfiguration-&gt;[ME:[Scope:Cell\s+(\w+):(\d+)\s*;TargetName:getRowColumn;Parameters:$2,$1Scope:Named\s+Cell\s+(?&lt;column&gt;\w+):(?&lt;row&gt;\d+)\s*;TargetName:getRowColumn;Parameters:$row,$columnScope:Header\s+Column\s+(\w+)\s*;TargetName:getRowColumn;Parameters:0,$1Scope:.+;TargetName:set;Parameters:$0Scope:Last.*;TargetName:Unreachable;Parameters:]]</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[set:[Last and Least]]</td>
+		<td>findRule</td>
+		<td>Last and Least</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[set:[Last and Least]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[Last and Least]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+</table>
+<br/><br/><h3>Test a JSON configuration string</h3>
+<br/><br/><br/><table>
+	<tr>
+		<td>Test Json Method Extractor Configuration</td>
+		<td>having</td>
+		<td>configuration</td>
+		<td>
+{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+  {
+    "Scope":"char at (\\d)",
+    "TargetName":"char at",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"index of '(\\w)'",
+    "TargetName":"index of",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"Element\\s(\\d)",
+    "TargetName":"get",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"property\\s+(\\w*)\\s*",
+    "TargetName":"get property",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"has Value\\s+'(\\w*)'\\s*",
+    "TargetName":"contains Value",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":".+",
+    "TargetName":"set $0",
+    "Parameters":""
+  }
+ ]
+}
+</td>
+	</tr>
+	<tr>
+		<td>example column name</td>
+		<td>generated method name?</td>
+		<td colspan="2">parameter list?</td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="ignore">hallo</td>
+		<td class="ignore"><span class="pass">setHallo</span></td>
+		<td colspan="2" class="ignore"><span class="pass">[]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Json Method Extractor Configuration                  _ _ _ _</td>
+		<td>configuration, example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td><span class="pass">Method Extractor</span></td>
+		<td>
+{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+  {
+    "Scope":"char at (\\d)",
+    "TargetName":"char at",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"index of '(\\w)'",
+    "TargetName":"index of",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"Element\\s(\\d)",
+    "TargetName":"get",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"property\\s+(\\w*)\\s*",
+    "TargetName":"get property",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"has Value\\s+'(\\w*)'\\s*",
+    "TargetName":"contains Value",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":".+",
+    "TargetName":"set $0",
+    "Parameters":""
+  }
+ ]
+}
+</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[set hallo:[]]</td>
+		<td>findRule</td>
+		<td>hallo</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[set hallo:[]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[set hallo]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[setHallo]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">property abc</td>
+		<td class="ignore"><span class="pass">getProperty</span></td>
+		<td colspan="2" class="ignore"><span class="pass">[abc]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Json Method Extractor Configuration                  _ _ _ _</td>
+		<td>configuration, example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td><span class="pass">Method Extractor</span></td>
+		<td>
+{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+  {
+    "Scope":"char at (\\d)",
+    "TargetName":"char at",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"index of '(\\w)'",
+    "TargetName":"index of",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"Element\\s(\\d)",
+    "TargetName":"get",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"property\\s+(\\w*)\\s*",
+    "TargetName":"get property",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"has Value\\s+'(\\w*)'\\s*",
+    "TargetName":"contains Value",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":".+",
+    "TargetName":"set $0",
+    "Parameters":""
+  }
+ ]
+}
+</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[get property:[abc]]</td>
+		<td>findRule</td>
+		<td>property abc</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[get property:[abc]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[get property]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[getProperty]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[abc]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="ignore">Element 5</td>
+		<td class="ignore"><span class="pass">get</span></td>
+		<td colspan="2" class="ignore"><span class="pass">[5]</span></td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>Test Json Method Extractor Configuration                  _ _ _ _</td>
+		<td>configuration, example column name, generated method name?,parameter list?</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td><span class="pass">Method Extractor</span></td>
+		<td>
+{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+  {
+    "Scope":"char at (\\d)",
+    "TargetName":"char at",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"index of '(\\w)'",
+    "TargetName":"index of",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"Element\\s(\\d)",
+    "TargetName":"get",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"property\\s+(\\w*)\\s*",
+    "TargetName":"get property",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"has Value\\s+'(\\w*)'\\s*",
+    "TargetName":"contains Value",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":".+",
+    "TargetName":"set $0",
+    "Parameters":""
+  }
+ ]
+}
+</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$RR&lt;-[get:[5]]</td>
+		<td>findRule</td>
+		<td>Element 5</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td colspan="2"><span class="pass">$RR-&gt;[get:[5]]</span></td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[get]</td>
+		<td colspan="2">getMethod Name</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$generatedMethodName&lt;-[get]</td>
+		<td colspan="2">get Disgraced Method Name</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$parameterList&lt;-[[5]]</td>
+		<td colspan="2">getParameters</td>
+	</tr>
+</table></td></tr>
+</table>
+<br/><div class="collapsible closed teardown"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div>Reset variables to get normal behaviour back.<br/><span class="meta">variable defined: SLIM_DT_GETTER=</span>
+<br/><span class="meta">variable defined: SLIM_DT_SETTER=</span>
+<br/></div>
+</div>
+</article></body></html>

@@ -1,0 +1,18 @@
+---
+Help: set up for the BIG tests
+---
+|import|
+|main.Fixtures.BIG.MQ|
+|main.Fixtures.BIG.Unix|
+|main.Fixtures.BIG.Compare|
+
+
+!|Comment|Script:FilePollerAndMover|/localRunTools/SFTP Server/data/fitnesseTest/in|/localRunTools/SFTP Server/data/fitnesseTest/out|
+|check|pollFile|
+
+
+!|Comment|FilePollerAndMover|
+|locationToPoll|locationToMove|
+|/localRunTools/SFTP Server/data/fitnesseTest/in|/localRunTools/SFTP Server/data/fitnesseTest/out|
+
+!contents -R2 -g -p -f -h

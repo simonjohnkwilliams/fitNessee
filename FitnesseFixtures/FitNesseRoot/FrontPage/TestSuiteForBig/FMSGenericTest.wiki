@@ -1,0 +1,46 @@
+---
+Help: This is the generic test for FMS all we should need to do is clone this and change the endpoints.
+---
+Test 1 - Move the file to the test dir location
+
+Copy the file locally from the test directory to the file move directory. We so this so we know the original test file is not deleted and we can clear down all the ENV's after
+the tests safely. 
+
+!|MoveFileFixture|
+|origin|destination|isMoved?|error?|
+|/TestFiles/Interface76/EmptyTestFile.txt|/SFTP/out/interface1TestFile.txt|true|null|
+
+
+#Test 2 - Put the file on the remote FMS Server for execution
+
+#Take the file from the local machine it's run on and put it to the remote FMS Server. This needs the correct credentials files put in the ${CREDENTIALS_FILE} location
+
+!|PutFileOnFMS|
+|localfilepath|remotefilename|remotedir|port|protocol|configFile|hasMoved?|error?|
+|${ROOT_LOCATION}/SFTP/out/interface1TestFile.txt|interface1TestFile.txt|./SFTP2/in|2222|SFTP|${CREDENTIALS_FILE}|true|null|
+
+Test 3 - Check if the file is on the remote server before trying to run it. 
+!|CheckRemoteFileAvailable|
+|remotefilename|remotedir|port|protocol|configFile|isAvailable?|error?|
+|interface1TestFile.txt|./SFTP2/in|2222|SFTP|${CREDENTIALS_FILE}|true|null|
+
+Test 4 - Run the FMS move script on the remote server. 
+Here we need to run the remote script on the server. We neede to find out though what this actual script is doing. 
+#It's worth noting that this file fixture can also have the input additionalCommands. You can then enter a command followed by a ; and it will splitit and have the commands run in
+#order that they are put in.
+!|ExecuteRemoteScriptFixture|
+|remoteScriptLocation|configFile|isRun?|error?|
+|./SFTP2/in/runner.sh|${CREDENTIALS_FILE}|true|null|
+
+Test 5 - Pull the remote file from the FMS Server. 
+#This gets a file from the remote FMS server from the location specified which was generated from the previous execute command. 
+!|GetFileOnFMS|
+|localfilepath|remotefilename|remotedir|port|protocol|configFile|hasMoved?|error?|
+|${ROOT_LOCATION}/SFTP/in/interface3TestFile.txt|interface1TestFile2.txt |./SFTP2/out|2222|SFTP|${CREDENTIALS_FILE}|true|null|
+
+Test 6 - Do we need to do a pattern match here?
+
+
+
+
+<test page>

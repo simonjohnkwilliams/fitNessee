@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteForBig.76InterfaceTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>11</exceptions>
+    </counts>
+    <date>2017-07-20T12:32:46+01:00</date>
+    <runTimeInMillis>83</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.TestSuiteForBig.SetUp"&gt;.FrontPage.TestSuiteForBig.SetUp&lt;/a&gt; &lt;a href="FrontPage.TestSuiteForBig.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;main.Fixtures.BIG&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Comment&lt;/td&gt;
+		&lt;td&gt;Script:FilePollerAndMover&lt;/td&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/in&lt;/td&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/out&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td colspan="3"&gt;pollFile&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Comment&lt;/td&gt;
+		&lt;td&gt;FilePollerAndMover&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;locationToPoll&lt;/td&gt;
+		&lt;td&gt;locationToMove&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/in&lt;/td&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/out&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;This fixture will take the following variables&lt;br/&gt;&lt;br/&gt;fileFromLocation - the location where the test file resides (this should be local to fitnesse)&lt;br/&gt;fileToLocation - The remote location where we are placing the file&lt;br/&gt;fileFromName - The file name we are picking up to move&lt;br/&gt;fileToName - (Optional) the name that we want to call the file when moved. If blank will keep the from name.&lt;br/&gt;keyPairFileName - this holds the server name and the security key location to access the remote box. &lt;br/&gt;&lt;br/&gt;Test 1 - Move the file to the test dir location&lt;br/&gt;&lt;br/&gt;The out location is where files are picked up from. &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;MoveFileFixture &lt;span class="error"&gt;Could not invoke constructor for MoveFileFixture[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;origin&lt;/td&gt;
+		&lt;td&gt;destination&lt;/td&gt;
+		&lt;td&gt;isMoved?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/TestFiles/Interface76/EmptyTestFile.txt &lt;span class="error"&gt;The instance decisionTable_1.setOrigin. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/SFTP/out/interface1TestFile.txt &lt;span class="error"&gt;The instance decisionTable_1.setDestination. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;true &lt;span class="error"&gt;The instance decisionTable_1.isMoved. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;null &lt;span class="error"&gt;The instance decisionTable_1.error. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 2 - start the SFTP server up &lt;br/&gt;&lt;br/&gt;In real example this will have to be amended. &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;SFTPFileFixture &lt;span class="error"&gt;Could not invoke constructor for SFTPFileFixture[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fileFromLocation&lt;/td&gt;
+		&lt;td&gt;fileToLocation&lt;/td&gt;
+		&lt;td&gt;keyPairFileName&lt;/td&gt;
+		&lt;td&gt;hasMoved?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/SFTP/in/interface1TestFile.txt &lt;span class="error"&gt;The instance decisionTable_2.setFileFromLocation. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/SFTP/out &lt;span class="error"&gt;The instance decisionTable_2.setFileToLocation. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/keypairs/I200375/keypair &lt;span class="error"&gt;The instance decisionTable_2.setKeyPairFileName. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;true &lt;span class="error"&gt;The instance decisionTable_2.hasMoved. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;null &lt;span class="error"&gt;The instance decisionTable_2.error. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 2 - Has the file been picked up from the location?&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Test 3 - Check File is in new location&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Test 4 - Pull down the remote file to compare locally.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Test 5 - Compare the expected result with the file from the server. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;div class="collapsible closed teardown"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.TestSuiteForBig.TearDown"&gt;.FrontPage.TestSuiteForBig.TearDown&lt;/a&gt; &lt;a href="FrontPage.TestSuiteForBig.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;Stop the poller&lt;br/&gt;&lt;br/&gt;Clear down the directories. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>76InterfaceTest</relativePageName>
+        <tags>Big, Interface76</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='main.Fixtures.BIG'}</instruction>
+        <slimResult>pass(main.Fixtures.BIG)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>main.Fixtures.BIG</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='MoveFileFixture', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for MoveFileFixture[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setOrigin', args=[/TestFiles/Interface76/EmptyTestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setOrigin. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setDestination', args=[/SFTP/out/interface1TestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setDestination. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='isMoved', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_7</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.isMoved. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='error', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.error. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='SFTPFileFixture', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for SFTPFileFixture[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_4', instruction='call', instanceName='decisionTable_2', methodName='setFileFromLocation', args=[/SFTP/in/interface1TestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setFileFromLocation. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_5', instruction='call', instanceName='decisionTable_2', methodName='setFileToLocation', args=[/SFTP/out]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setFileToLocation. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_6', instruction='call', instanceName='decisionTable_2', methodName='setKeyPairFileName', args=[/keypairs/I200375/keypair]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_6</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setKeyPairFileName. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_8', instruction='call', instanceName='decisionTable_2', methodName='hasMoved', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.hasMoved. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_9', instruction='call', instanceName='decisionTable_2', methodName='error', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_9</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.error. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp "C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\lib\fitnesse-standalone.jar;lib/fitnesse-standalone.jar - import the fitnesse jar;lib/jsch-0.1.54.jar - import the SFTP jar;lib/FitnesseFixtures-0.0.1-SNAPSHOT.jar - import the fixture code as a jar. " fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>572</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteForBig.FMSGenericTest</rootPath>
+    <result>
+    <counts>
+      <right>9</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-07-28T09:31:28+01:00</date>
+    <runTimeInMillis>4356</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.TestSuiteForBig.SetUp"&gt;.FrontPage.TestSuiteForBig.SetUp&lt;/a&gt; &lt;a href="FrontPage.TestSuiteForBig.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;main.Fixtures.BIG&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Comment&lt;/td&gt;
+		&lt;td&gt;Script:FilePollerAndMover&lt;/td&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/in&lt;/td&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/out&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td colspan="3"&gt;pollFile&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Comment&lt;/td&gt;
+		&lt;td&gt;FilePollerAndMover&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;locationToPoll&lt;/td&gt;
+		&lt;td&gt;locationToMove&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/in&lt;/td&gt;
+		&lt;td&gt;/localRunTools/SFTP Server/data/fitnesseTest/out&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Test 1 - Move the file to the test dir location&lt;br/&gt;&lt;br/&gt;Copy the file locally from the test directory to the file move directory. We so this so we know the original test file is not deleted and we can clear down all the ENV's after&lt;br/&gt;the tests safely. &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;MoveFileFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;origin&lt;/td&gt;
+		&lt;td&gt;destination&lt;/td&gt;
+		&lt;td&gt;isMoved?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/TestFiles/Interface76/EmptyTestFile.txt&lt;/td&gt;
+		&lt;td&gt;/SFTP/out/interface1TestFile.txt&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="8"&gt;&lt;span class="pass"&gt;PutFileOnFMS&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;localfilepath&lt;/td&gt;
+		&lt;td&gt;remotefilename&lt;/td&gt;
+		&lt;td&gt;remotedir&lt;/td&gt;
+		&lt;td&gt;port&lt;/td&gt;
+		&lt;td&gt;protocol&lt;/td&gt;
+		&lt;td&gt;configFile&lt;/td&gt;
+		&lt;td&gt;hasMoved?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/SFTP/out/interface1TestFile.tx&lt;/td&gt;
+		&lt;td&gt;interface1TestFile.txt&lt;/td&gt;
+		&lt;td&gt;./SFTP2/in&lt;/td&gt;
+		&lt;td&gt;2222&lt;/td&gt;
+		&lt;td&gt;SFTP&lt;/td&gt;
+		&lt;td&gt;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;fals&lt;/span&gt;e] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;tru&lt;/span&gt;&lt;span class="fail"&gt;e]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 3 - Check if the file is on the remote server before trying to run it. &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;&lt;span class="pass"&gt;CheckRemoteFileAvailable&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;remotefilename&lt;/td&gt;
+		&lt;td&gt;remotedir&lt;/td&gt;
+		&lt;td&gt;port&lt;/td&gt;
+		&lt;td&gt;protocol&lt;/td&gt;
+		&lt;td&gt;configFile&lt;/td&gt;
+		&lt;td&gt;isAvailable?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;interface1TestFile.txt&lt;/td&gt;
+		&lt;td&gt;./SFTP2/in&lt;/td&gt;
+		&lt;td&gt;2222&lt;/td&gt;
+		&lt;td&gt;SFTP&lt;/td&gt;
+		&lt;td&gt;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 4 - Run the FMS move script on the remote server. &lt;br/&gt;Here we need to run the remote script on the server. We neede to find out though what this actual script is doing. &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;ExecuteRemoteScriptFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;remoteScriptLocation&lt;/td&gt;
+		&lt;td&gt;configFile&lt;/td&gt;
+		&lt;td&gt;isRun?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;./SFTP2/in/runner.sh&lt;/td&gt;
+		&lt;td&gt;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 5 - Pull the remote file from the FMS Server. &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="8"&gt;&lt;span class="pass"&gt;GetFileOnFMS&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;localfilepath&lt;/td&gt;
+		&lt;td&gt;remotefilename&lt;/td&gt;
+		&lt;td&gt;remotedir&lt;/td&gt;
+		&lt;td&gt;port&lt;/td&gt;
+		&lt;td&gt;protocol&lt;/td&gt;
+		&lt;td&gt;configFile&lt;/td&gt;
+		&lt;td&gt;hasMoved?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/SFTP/in/interface3TestFile.txt&lt;/td&gt;
+		&lt;td&gt;interface1TestFile2.txt&lt;/td&gt;
+		&lt;td&gt;./SFTP2/out&lt;/td&gt;
+		&lt;td&gt;2222&lt;/td&gt;
+		&lt;td&gt;SFTP&lt;/td&gt;
+		&lt;td&gt;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 6 - Do we need to do a pattern match here?&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;div class="collapsible closed teardown"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.TestSuiteForBig.TearDown"&gt;.FrontPage.TestSuiteForBig.TearDown&lt;/a&gt; &lt;a href="FrontPage.TestSuiteForBig.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;Stop the poller&lt;br/&gt;&lt;br/&gt;Clear down the directories. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>FMSGenericTest</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='main.Fixtures.BIG'}</instruction>
+        <slimResult>pass(main.Fixtures.BIG)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>main.Fixtures.BIG</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='MoveFileFixture', args=[]}</instruction>
+        <slimResult>pass(MoveFileFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>MoveFileFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setOrigin', args=[/TestFiles/Interface76/EmptyTestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setDestination', args=[/SFTP/out/interface1TestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='isMoved', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='error', args=[]}</instruction>
+        <slimResult>pass(null)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>null</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='PutFileOnFMS', args=[]}</instruction>
+        <slimResult>pass(PutFileOnFMS)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>PutFileOnFMS</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_4', instruction='call', instanceName='decisionTable_2', methodName='setLocalfilepath', args=[C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/SFTP/out/interface1TestFile.tx]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_2_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_5', instruction='call', instanceName='decisionTable_2', methodName='setRemotefilename', args=[interface1TestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_2_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_6', instruction='call', instanceName='decisionTable_2', methodName='setRemotedir', args=[./SFTP2/in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_2_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_7', instruction='call', instanceName='decisionTable_2', methodName='setPort', args=[2222]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_2_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_8', instruction='call', instanceName='decisionTable_2', methodName='setProtocol', args=[SFTP]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_2_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_9', instruction='call', instanceName='decisionTable_2', methodName='setConfigFile', args=[C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_2_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_11', instruction='call', instanceName='decisionTable_2', methodName='hasMoved', args=[]}</instruction>
+        <slimResult>fail(a=false;e=true)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_2_11</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>false</actual>
+                              <expected>true</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_12', instruction='call', instanceName='decisionTable_2', methodName='error', args=[]}</instruction>
+        <slimResult>pass(null)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_12</instructionId>
+                    <col>7</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>null</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_0', instruction='make', instanceName='decisionTable_3', className='CheckRemoteFileAvailable', args=[]}</instruction>
+        <slimResult>pass(CheckRemoteFileAvailable)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_3_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>CheckRemoteFileAvailable</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_4', instruction='call', instanceName='decisionTable_3', methodName='setRemotefilename', args=[interface1TestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_3_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_5', instruction='call', instanceName='decisionTable_3', methodName='setRemotedir', args=[./SFTP2/in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_3_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_6', instruction='call', instanceName='decisionTable_3', methodName='setPort', args=[2222]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_3_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_7', instruction='call', instanceName='decisionTable_3', methodName='setProtocol', args=[SFTP]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_3_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_8', instruction='call', instanceName='decisionTable_3', methodName='setConfigFile', args=[C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_3_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_10', instruction='call', instanceName='decisionTable_3', methodName='isAvailable', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_3_10</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_11', instruction='call', instanceName='decisionTable_3', methodName='error', args=[]}</instruction>
+        <slimResult>pass(null)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_3_11</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>null</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_0', instruction='make', instanceName='decisionTable_4', className='ExecuteRemoteScriptFixture', args=[]}</instruction>
+        <slimResult>pass(ExecuteRemoteScriptFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_4_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>ExecuteRemoteScriptFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_4', instruction='call', instanceName='decisionTable_4', methodName='setRemoteScriptLocation', args=[./SFTP2/in/runner.sh]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_4_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_5', instruction='call', instanceName='decisionTable_4', methodName='setConfigFile', args=[C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_4_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_7', instruction='call', instanceName='decisionTable_4', methodName='isRun', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_4_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_8', instruction='call', instanceName='decisionTable_4', methodName='error', args=[]}</instruction>
+        <slimResult>pass(null)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_4_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>null</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_0', instruction='make', instanceName='decisionTable_5', className='GetFileOnFMS', args=[]}</instruction>
+        <slimResult>pass(GetFileOnFMS)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_5_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>GetFileOnFMS</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_4', instruction='call', instanceName='decisionTable_5', methodName='setLocalfilepath', args=[C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/SFTP/in/interface3TestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_5_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_5', instruction='call', instanceName='decisionTable_5', methodName='setRemotefilename', args=[interface1TestFile2.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_5_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_6', instruction='call', instanceName='decisionTable_5', methodName='setRemotedir', args=[./SFTP2/out]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_5_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_7', instruction='call', instanceName='decisionTable_5', methodName='setPort', args=[2222]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_5_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_8', instruction='call', instanceName='decisionTable_5', methodName='setProtocol', args=[SFTP]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_5_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_9', instruction='call', instanceName='decisionTable_5', methodName='setConfigFile', args=[C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_5_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_11', instruction='call', instanceName='decisionTable_5', methodName='hasMoved', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_5_11</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_12', instruction='call', instanceName='decisionTable_5', methodName='error', args=[]}</instruction>
+        <slimResult>pass(null)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_5_12</instructionId>
+                    <col>7</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>null</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\lib\fitnesse-standalone.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/fitnesse-standalone.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/target/FitnesseFixtures-0.0.1-SNAPSHOT.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>Is channel open: false
+Is channel connected: true
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4826</totalRunTimeInMillis>
+</testResults>
+

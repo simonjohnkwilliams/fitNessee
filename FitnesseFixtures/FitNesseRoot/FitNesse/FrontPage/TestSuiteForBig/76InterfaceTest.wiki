@@ -1,0 +1,46 @@
+---
+Suites: Big, Interface76
+---
+This fixture will take the following variables
+
+fileFromLocation - the location where the test file resides (this should be local to fitnesse)
+fileToLocation - The remote location where we are placing the file
+fileFromName - The file name we are picking up to move
+fileToName - (Optional) the name that we want to call the file when moved. If blank will keep the from name.
+keyPairFileName - this holds the server name and the security key location to access the remote box. 
+
+
+
+Test 1 - Move the file to the test location
+
+
+!|LoadFileFixture|
+|fileFromLocation|fileToLocation|fileFromName|fileToName|keyPairFileName|hasMoved?|error?|
+|/TestFiles/Interface76|/fitnesseTest/in|/EmptyTestFile.txt|putname.txt|/keypairs/I200375/keypair|true|null|
+
+Test 2 - Has the file been picked up from the location?
+
+!|CheckFileFixture|
+|fileToLocation|fileToName|keyPairFileName|waitPeriod|expected|exists?|
+|/fitnesseTest/in|putname.txt|/keypairs/I200375/keypair|60|false|false|
+
+Test 3 - Check File is in new location
+
+!|CheckFileFixture|
+|fileToLocation|fileToName|keyPairFileName|waitPeriod|expected|exists?|
+|/fitnesseTest/out|putname.txt|/keypairs/I200375/keypair|60|true|true|
+
+Test 4 - Pull down the remote file to compare locally.
+!|PullFileDownLocally|
+|localLocation|remoteLocation|localFileName|RemoteFileName|keyPairFileName|isDownloaded?|
+|/TestFiles/Interface76/downloads|/fitnesseTest/out|/compareTestFile.txt|putname.txt|/keypairs/I200375/keypair|true|
+
+
+Test 5 - Compare the expected result with the file from the server. 
+!|Query:ListCsvData|/TestFiles/Interface76/downloads/compareTestFile.txt|
+|Col1	|Col2	|Col3	|
+|Test        |File         |Test      |
+|Item      |1         |2   |
+
+
+<test page>

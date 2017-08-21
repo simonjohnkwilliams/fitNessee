@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteForBig.76InterfaceTest</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>12</exceptions>
+    </counts>
+    <date>2017-02-03T11:41:46+00:00</date>
+    <runTimeInMillis>1378</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;main.Fixtures.BIG&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;This fixture will take the following variables&lt;br/&gt;&lt;br/&gt;fileFromLocation - the location where the test file resides (this should be local to fitnesse)&lt;br/&gt;fileToLocation - The remote location where we are placing the file&lt;br/&gt;fileFromName - The file name we are picking up to move&lt;br/&gt;fileToName - (Optional) the name that we want to call the file when moved. If blank will keep the from name.&lt;br/&gt;keyPairFileName - this holds the server name and the security key location to access the remote box. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Test 1 - Move the file to the test location&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;LoadFileFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fileFromLocation&lt;/td&gt;
+		&lt;td&gt;fileToLocation&lt;/td&gt;
+		&lt;td&gt;fileFromName&lt;/td&gt;
+		&lt;td&gt;fileToName&lt;/td&gt;
+		&lt;td&gt;keyPairFileName&lt;/td&gt;
+		&lt;td&gt;hasMoved?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/TestFiles/Interface76&lt;/td&gt;
+		&lt;td&gt;/fitnesseTest&lt;/td&gt;
+		&lt;td&gt;/EmptyTestFile.txt&lt;/td&gt;
+		&lt;td&gt;putname.txt&lt;/td&gt;
+		&lt;td&gt;/keypairs/I200375/keypair&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 2 - Has the file been picked up from the location?&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;CheckFileFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fileToLocation&lt;/td&gt;
+		&lt;td&gt;fileToName&lt;/td&gt;
+		&lt;td&gt;keyPairFileName&lt;/td&gt;
+		&lt;td&gt;waitPeriod&lt;/td&gt;
+		&lt;td&gt;exists?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;/fitnesseTest &lt;span class="error"&gt;Method setFileToLocation[1] not found in main.Fixtures.BIG.CheckFileFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;putname.txt &lt;span class="error"&gt;Method setFileToName[1] not found in main.Fixtures.BIG.CheckFileFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;/keypairs/I200375/keypair &lt;span class="error"&gt;Method setKeyPairFileName[1] not found in main.Fixtures.BIG.CheckFileFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;60 &lt;span class="error"&gt;Method setWaitPeriod[1] not found in main.Fixtures.BIG.CheckFileFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;false&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.Integer.parseInt(Unknown Source) [rt.jar:1.8.0_121]
+	at main.Fixtures.BIG.CheckFileFixture.exists(CheckFileFixture.java:43) [file:/C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Test 2 - pull the results file from the server (here we want to get the results file and do the compare.  &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;CompareOutputFile &lt;span class="error"&gt;Could not invoke constructor for CompareOutputFile[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fileFromLocation&lt;/td&gt;
+		&lt;td&gt;fileToLocation&lt;/td&gt;
+		&lt;td&gt;fileFromName&lt;/td&gt;
+		&lt;td&gt;fileToName&lt;/td&gt;
+		&lt;td&gt;keyPairFileName&lt;/td&gt;
+		&lt;td&gt;hasMoved?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/TestFiles/Interface76 &lt;span class="error"&gt;The instance decisionTable_3.setFileFromLocation. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/fitnesseTest &lt;span class="error"&gt;The instance decisionTable_3.setFileToLocation. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/EmptyTestFile.txt &lt;span class="error"&gt;The instance decisionTable_3.setFileFromName. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;putname.txt &lt;span class="error"&gt;The instance decisionTable_3.setFileToName. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/keypairs/I200375/keypair &lt;span class="error"&gt;The instance decisionTable_3.setKeyPairFileName. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;true &lt;span class="error"&gt;The instance decisionTable_3.hasMoved. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;</content>
+    <relativePageName>76InterfaceTest</relativePageName>
+        <tags>Big, Interface76</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='main.Fixtures.BIG'}</instruction>
+        <slimResult>pass(main.Fixtures.BIG)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>main.Fixtures.BIG</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='LoadFileFixture', args=[]}</instruction>
+        <slimResult>pass(LoadFileFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>LoadFileFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setFileFromLocation', args=[/TestFiles/Interface76]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setFileToLocation', args=[/fitnesseTest]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setFileFromName', args=[/EmptyTestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setFileToName', args=[putname.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setKeyPairFileName', args=[/keypairs/I200375/keypair]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='hasMoved', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='CheckFileFixture', args=[]}</instruction>
+        <slimResult>pass(CheckFileFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>CheckFileFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_4', instruction='call', instanceName='decisionTable_2', methodName='setFileToLocation', args=[/fitnesseTest]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setFileToLocation[1] not found in main.Fixtures.BIG.CheckFileFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_5', instruction='call', instanceName='decisionTable_2', methodName='setFileToName', args=[putname.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setFileToName[1] not found in main.Fixtures.BIG.CheckFileFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_6', instruction='call', instanceName='decisionTable_2', methodName='setKeyPairFileName', args=[/keypairs/I200375/keypair]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_6</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setKeyPairFileName[1] not found in main.Fixtures.BIG.CheckFileFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_7', instruction='call', instanceName='decisionTable_2', methodName='setWaitPeriod', args=[60]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setWaitPeriod[1] not found in main.Fixtures.BIG.CheckFileFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_9', instruction='call', instanceName='decisionTable_2', methodName='exists', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_9</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_0', instruction='make', instanceName='decisionTable_3', className='CompareOutputFile', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for CompareOutputFile[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_4', instruction='call', instanceName='decisionTable_3', methodName='setFileFromLocation', args=[/TestFiles/Interface76]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.setFileFromLocation. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_5', instruction='call', instanceName='decisionTable_3', methodName='setFileToLocation', args=[/fitnesseTest]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.setFileToLocation. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_6', instruction='call', instanceName='decisionTable_3', methodName='setFileFromName', args=[/EmptyTestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_6</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.setFileFromName. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_7', instruction='call', instanceName='decisionTable_3', methodName='setFileToName', args=[putname.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.setFileToName. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_8', instruction='call', instanceName='decisionTable_3', methodName='setKeyPairFileName', args=[/keypairs/I200375/keypair]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_8</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.setKeyPairFileName. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_10', instruction='call', instanceName='decisionTable_3', methodName='hasMoved', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.hasMoved. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\lib\fitnesse-standalone.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/fitnesse-standalone.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/jsch-0.1.54.jar;C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\target\classes fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>[drwx------ 2 tester users          0 Feb 03 10:36 ., drwx------ 2 tester users          0 Feb 03 10:36 .., drwx------ 2 tester users          0 Feb 03 10:36 in, drwx------ 2 tester users          0 Feb 03 10:36 out]
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1807</totalRunTimeInMillis>
+</testResults>
+

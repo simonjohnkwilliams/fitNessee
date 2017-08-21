@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteForBig.76InterfaceTest</rootPath>
+    <result>
+    <counts>
+      <right></right>
+      <wrong></wrong>
+      <ignores></ignores>
+      <exceptions></exceptions>
+    </counts>
+    <date>2017-02-05T15:01:08+00:00</date>
+    <runTimeInMillis>$result.runTimeInMillis</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;main.Fixtures.BIG&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;This fixture will take the following variables&lt;br/&gt;&lt;br/&gt;fileFromLocation - the location where the test file resides (this should be local to fitnesse)&lt;br/&gt;fileToLocation - The remote location where we are placing the file&lt;br/&gt;fileFromName - The file name we are picking up to move&lt;br/&gt;fileToName - (Optional) the name that we want to call the file when moved. If blank will keep the from name.&lt;br/&gt;keyPairFileName - this holds the server name and the security key location to access the remote box. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Test 1 - Move the file to the test location&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;&lt;span class="pass"&gt;LoadFileFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fileFromLocation&lt;/td&gt;
+		&lt;td&gt;fileToLocation&lt;/td&gt;
+		&lt;td&gt;fileFromName&lt;/td&gt;
+		&lt;td&gt;fileToName&lt;/td&gt;
+		&lt;td&gt;keyPairFileName&lt;/td&gt;
+		&lt;td&gt;hasMoved?&lt;/td&gt;
+		&lt;td&gt;error?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/TestFiles/Interface76&lt;/td&gt;
+		&lt;td&gt;/fitnesseTest/in&lt;/td&gt;
+		&lt;td&gt;/EmptyTestFile.txt&lt;/td&gt;
+		&lt;td&gt;/putname.txt&lt;/td&gt;
+		&lt;td&gt;/keypairs/I200375/keypair&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;fals&lt;/span&gt;e] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;tru&lt;/span&gt;&lt;span class="fail"&gt;e]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test 2 - Has the file been picked up from the location?&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>76InterfaceTest</relativePageName>
+        <tags>Big, Interface76</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='main.Fixtures.BIG'}</instruction>
+        <slimResult>pass(main.Fixtures.BIG)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>main.Fixtures.BIG</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='LoadFileFixture', args=[]}</instruction>
+        <slimResult>pass(LoadFileFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>LoadFileFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setFileFromLocation', args=[/TestFiles/Interface76]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setFileToLocation', args=[/fitnesseTest/in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setFileFromName', args=[/EmptyTestFile.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setFileToName', args=[/putname.txt]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setKeyPairFileName', args=[/keypairs/I200375/keypair]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='hasMoved', args=[]}</instruction>
+        <slimResult>fail(a=false;e=true)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>false</actual>
+                              <expected>true</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='error', args=[]}</instruction>
+        <slimResult>pass(null)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>null</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\lib\fitnesse-standalone.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/fitnesse-standalone.jar;C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/lib/jsch-0.1.54.jar;C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\target\classes fitnesse.slim.SlimService 1</command>
+    <exitCode>1</exitCode>
+    <stdOut>[drwx------ 2 tester users          0 Feb 03 18:41 ., drwx------ 2 tester users          0 Feb 03 18:41 ..]
+[drwx------ 2 tester users          0 Feb 03 18:41 ., drwx------ 2 tester users          0 Feb 03 18:41 ..]
+</stdOut>
+    <stdErr></stdErr>
+    <exception>Could not send/receive data with SUT</exception>
+    <exception>fitnesse.testsystems.slim.SlimCommunicationException: Could not send/receive data with SUT</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>32852</totalRunTimeInMillis>
+</testResults>
+

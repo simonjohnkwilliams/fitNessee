@@ -1,0 +1,1480 @@
+<html><head><title>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.DefineAliasInPluginTest</title><meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/><link rel='stylesheet' type='text/css' href='css/fitnesse.css'/><script src='javascript/jquery-1.11.3.min.js' type='text/javascript'></script><script src='javascript/fitnesse.js' type='text/javascript'></script></head><body><header><h2>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.DefineAliasInPluginTest</h2></header><article><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td>page</td>
+		<td>with content</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td colspan="2">@content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>nothing</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td colspan="2"></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given test page</td>
+		<td>page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td colspan="2">@page</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td>a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given slim test page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>!define TEST_SYSTEM {slim}</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">&lt;a href="@target"</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@source</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have creating link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have creating link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have creating link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should not contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should not contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td>text</td>
+		<td>in line</td>
+		<td>symbol</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>$IT</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>$@symbol=</td>
+		<td>line number containing</td>
+		<td colspan="3">@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should match</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should match</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page in debug mode</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test&amp;debug</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for suite</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?suite</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>its test results should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>test results for page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test ressults for page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>widget</td>
+		<td>wikiText</td>
+		<td>should render</td>
+		<td>htmlText</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>WidgetPage</td>
+		<td>with content</td>
+		<td colspan="2">@wikiText</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>WidgetPage</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@htmlText</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>the line</td>
+		<td>after</td>
+		<td>should come after</td>
+		<td>before</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo int</td>
+		<td>$@before</td>
+		<td colspan="2">&lt; $@after</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td colspan="3">pass</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo</td>
+		<td>pass</td>
+		<td>pass</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show collapsed</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show Symbol</td>
+		<td>result</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>then</td>
+		<td>pass</td>
+		<td>assertions pass,</td>
+		<td>fail</td>
+		<td>fail,</td>
+		<td>ignore</td>
+		<td>are ignored</td>
+		<td>exception</td>
+		<td>exceptions thrown</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="8">Assertions:&lt;[^&lt;]*@pass right, @fail wrong, @ignore ignored, @exception exceptions</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>Assertions:&lt;[^&lt;]*exceptions</td>
+		<td>contents</td>
+		<td colspan="6">0</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and cell</td>
+		<td>text</td>
+		<td>has result</td>
+		<td>result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">class="@result"&gt;@text&lt;</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>class="[^"]+"&gt;@text&lt;</td>
+		<td>contents</td>
+		<td>0</td>
+	</tr>
+</table>
+<br/><span class="meta">variable defined: TestSTART=@@@START: Test specific content</span>
+ <br/><span class="meta">variable defined: TestEND=@@@END: Test specific content</span>
+ <br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and TestSystem setup is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and setup content is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and test content is</td>
+		<td colspan="2">content</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>$IT</td>
+		<td>with content</td>
+		<td>$CONTENT @@@START: Test specific content@content@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>$IT</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>contents</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$HTML_Result=</td>
+		<td>found</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML input</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>pageHtml</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>$HTML_Input=</td>
+		<td>found</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td>get value</td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get collapsed executon log for page</td>
+		<td colspan="2">source</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?executionLog</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested and HTML is extracted</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>when page</td>
+		<td>@source</td>
+		<td colspan="2">is tested</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td colspan="4">get HTML result</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td colspan="4">get HTML input</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>Import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">fitnesse.fixtures</span></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td><span class="pass">SetUp</span></td>
+		<td>Plugins=fitnesse.testsystems.slim.CustomTableAliasPlugin
+CustomComparators=glob:fitnesse.testsystems.slim.GlobComparator</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>Library</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">page driver</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td><span class="pass">echo fixture</span></td>
+	</tr>
+</table>
+</div>
+</div>
+<br/>You can <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.DefineAliasTest">Define aliases</a> via tables in the wiki. It's also possible to add aliases via plugins. This has the advantage that the wiki is not cluttered with techical concerns.<br/><br/>To demonstrate this a class <i>fitnesse.testsystems.slim.CustomTableAliasPlugin</i> has been loaded in <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp">SetUp</a>.<br/><br/>This plugin makes an alias from <i>aliased echo fixture</i> to the good old echo fixture.<br/><br/>So the following test table works:<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td colspan="4">script</td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="ignore">given page</td>
+		<td class="ignore">AliasTest</td>
+		<td class="ignore">with content</td>
+		<td class="ignore">!define TEST_SYSTEM {slim}
+
+| import |
+| fitnesse.slim.test |
+
+| script : my requirement |
+| check | do business logic | 42 |
+</td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td>page</td>
+		<td>with content</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>AliasTest</td>
+		<td>with content</td>
+		<td colspan="2">!define TEST_SYSTEM {slim}
+
+| import |
+| fitnesse.slim.test |
+
+| script : my requirement |
+| check | do business logic | 42 |
+</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT&lt;-[AliasTest]</td>
+		<td>echo</td>
+		<td colspan="3">AliasTest</td>
+	</tr>
+</table></td></tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>AliasTest?test</td>
+		<td><span class="pass">200</span></td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td><span class="pass">ensure</span></td>
+		<td>content contains</td>
+		<td colspan="2">class="pass"</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="3">content</td>
+	<td>HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-FitNesse-Test-Id: 2
+Content-Type: text/html; charset=UTF-8
+
+a8
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+
+  &lt;title&gt;
+17
+Test Results: AliasTest
+b
+&lt;/title&gt;
+  
+12f
+  &lt;!--[if lt IE 9]&gt;
+   &lt;script&gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &lt;/script&gt;
+  &lt;![endif]--&gt;
+  
+  &lt;link rel="shortcut icon" type="image/png" href="
+1
+/
+55
+files/fitnesse/images/favicon.png" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="
+1
+/
+58
+files/fitnesse/css/fitnesse_wiki.css" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="
+1
+/
+59
+files/fitnesse/css/fitnesse_pages.css" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="
+1
+/
+64
+files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&gt;
+  &lt;link rel="stylesheet" type="text/css" href="
+1
+/
+46
+files/fitnesse/bootstrap/css/fitnesse-bootstrap.css"&gt;
+
+  &lt;script src="
+1
+/
+60
+files/fitnesse/javascript/jquery-1.11.3.min.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="
+1
+/
+58
+files/fitnesse/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script src="
+1
+/
+5a
+files/fitnesse/bootstrap/js/bootstrap.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="
+1
+/
+59
+files/fitnesse/bootstrap/js/respond.js" type="text/javascript"&gt;&lt;/script&gt;
+
+ &lt;/head&gt;
+ &lt;body
+8
+ class="
+8
+testPage
+1
+"
+e4
+&gt;
+
+  &lt;nav class="navbar-fixed-top " role="navigation"&gt;
+   &lt;div class="navbar navbar-default"&gt;
+   &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class="navbar-header"&gt;
+     &lt;a class="navbar-brand" href="
+1
+/
+35
+FrontPage"&gt;&lt;span&gt;FitNesse&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    
+23
+&lt;div id="menu-nav" class="hidden"&gt;
+
+20
+&lt;ul class="nav navbar-nav"&gt;
+    
+4
+    
+15
+        &lt;li&gt;&lt;a href="
+9
+AliasTest
+27
+?test" accesskey="t"&gt;Test&lt;/a&gt;&lt;/li&gt;
+    
+4
+    
+15
+        &lt;li&gt;&lt;a href="
+9
+AliasTest
+27
+?edit" accesskey="e"&gt;Edit&lt;/a&gt;&lt;/li&gt;
+    
+4
+    
+4
+    
+5
+
+    
+8
+        
+19
+            &lt;li&gt;&lt;a href="
+9
+AliasTest
+1b
+?new"&gt;Add&lt;/a&gt;&lt;/li&gt;
+        
+4
+    
+43
+
+    &lt;li id="tools" class="dropdown" aria-haspopup="true"&gt;&lt;a href="
+5a
+#" class="dropdown-toggle" data-toggle="dropdown"&gt;Tools &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+        
+8
+        
+2f
+        &lt;ul class="dropdown-menu"&gt;
+            
+13
+                &lt;li
+a
+&gt;&lt;a href="
+9
+AliasTest
+3b
+?properties" accesskey="p"&gt;Properties&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+13
+                &lt;li
+a
+&gt;&lt;a href="
+9
+AliasTest
+3a
+?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+13
+                &lt;li
+a
+&gt;&lt;a href="
+9
+AliasTest
+37
+?versions" accesskey="v"&gt;Versions&lt;/a&gt;&lt;/li&gt;
+            
+d
+
+            
+13
+                &lt;li
+10
+ class="divider"
+a
+&gt;&lt;a href="
+9
+AliasTest
+48
+?refactor&amp;amp;type=rename"&gt;Rename&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="
+9
+AliasTest
+44
+?refactor&amp;amp;type=move"&gt;Move&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="
+9
+AliasTest
+4a
+?refactor&amp;amp;type=replace"&gt;Replace&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="
+9
+AliasTest
+29
+?deletePage"&gt;Delete&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+14
+                &lt;li 
+10
+ class="divider"
+a
+&gt;&lt;a href="
+1
+/
+30
+files" accesskey="f"&gt;Files&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+13
+                &lt;li
+3d
+&gt;&lt;a href="?search" accesskey="s"&gt;Search&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+13
+                &lt;li
+a
+&gt;&lt;a href="
+1
+/
+40
+RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;&lt;/li&gt;
+            
+d
+
+            
+13
+                &lt;li
+10
+ class="divider"
+41
+&gt;&lt;a href="?testHistory"&gt;Test History&lt;/a&gt;&lt;/li&gt;
+                &lt;li
+a
+&gt;&lt;a href="
+9
+AliasTest
+3e
+?pageHistory" accesskey="h"&gt;Page History&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+13
+                &lt;li
+44
+&gt;&lt;a href="?test&amp;amp;remote_debug"&gt;Remote Debug&lt;/a&gt;&lt;/li&gt;
+            
+c
+            
+d
+
+            
+13
+                &lt;li
+10
+ class="divider"
+a
+&gt;&lt;a href="
+1
+/
+41
+FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;&lt;/li&gt;
+            
+1e
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+2e
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;//&lt;!--
+ 
+12
+$(function() {
+   
+3
+$('
+5
+#menu
+53
+-nav').removeClass('hidden');
+ });
+//--&gt;&lt;/script&gt;
+
+&lt;span id="test-action"&gt;&lt;/span&gt;
+
+
+4
+    
+5
+     
+18a
+&lt;div id="error-nav" class="hidden navbar-right"&gt;
+ &lt;span class="title"&gt;Failure Navigator&lt;/span&gt;
+ &lt;div class="btn-group"&gt;
+  &lt;button id="error-nav-prev" class="btn btn-default"&gt;&amp;laquo;&lt;/button&gt;
+  &lt;span class="btn-text"&gt;&lt;input id="error-nav-text" type="text" size="3"&gt; of &lt;span id="error-nav-max"&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;button id="error-nav-next" class="btn btn-default"&gt;&amp;raquo;&lt;/button&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+4
+    
+e
+
+   &lt;/div&gt;
+   
+ab
+&lt;ol class="page-actions btn-group"&gt;
+ &lt;li class="expandall btn btn-xs"&gt;Expand All&lt;/li&gt;
+ &lt;li class="collapseall btn btn-xs"&gt;Collapse All&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="breadcrumb"&gt;
+
+5
+ &lt;li&gt;
+a
+&lt;a href="/
+9
+AliasTest
+2
+"&gt;
+9
+AliasTest
+4
+&lt;/a&gt;
+c
+&lt;/li&gt;
+&lt;/ol&gt;
+
+18
+  &lt;/nav&gt;
+
+  &lt;header&gt;
+   
+1e
+  &lt;/header&gt;
+  
+  &lt;article&gt;
+   
+7e
+&lt;script type="text/javascript"&gt;
+    window.onbeforeunload = function () {
+        var stoptestDiv = document.querySelector("li
+5
+#test
+c2
+-action a.stop");
+
+        if (stoptestDiv){
+            return "There is a test or suite currently running.  Are you sure you want to navigate away from this page?";
+        }
+    }
+&lt;/script&gt;
+
+
+67
+
+
+&lt;div id="test-summary"&gt;&lt;div id="progressBar"&gt;Preparing Tests ...&lt;/div&gt;&lt;/div&gt;
+
+&lt;div id="test-action"&gt;
+
+8
+&lt;/div&gt;
+
+
+1
+
+
+af
+&lt;script&gt;document.getElementById("test-action").innerHTML = "&lt;a href=\"#\" onclick=\"doSilentRequest('?responder=stoptest&amp;id=2')\" class=\"stop\"&gt;Stop Test&lt;/a&gt;\r\n";&lt;/script&gt;
+
+110
+&lt;script&gt;var existingContent = document.getElementById("test-summaries").innerHTML;
+document.getElementById("test-summaries").innerHTML = existingContent + "&lt;h3&gt;slim:fitnesse.slim.SlimService&lt;/h3&gt;\n&lt;ul id=\"test-system-slim:fitnesse.slim.SlimService\"&gt;&lt;/ul&gt;";
+&lt;/script&gt;
+
+b6
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;div id=\"progressBar\" class=\"pass\" style=\"width:0.0%\"&gt;Running&amp;nbsp;tests&amp;nbsp;...&amp;nbsp;(1/1)&lt;/div&gt;\r\n";&lt;/script&gt;
+
+36
+&lt;h2&gt;Test System: slim:fitnesse.slim.SlimService&lt;/h2&gt;
+
+1f
+&lt;div class="alternating_block"&gt;
+fa
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;
+124
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="3"&gt;script : my requirement&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;do business logic&lt;/td&gt;
+		&lt;td&gt;42 &lt;span class="error"&gt;The instance scriptTableActor.doBusinessLogic. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+8
+&lt;/div&gt;
+
+1b4
+&lt;script&gt;var existingContent = document.getElementById("test-system-slim:fitnesse.slim.SlimService").innerHTML;
+document.getElementById("test-system-slim:fitnesse.slim.SlimService").innerHTML = existingContent + "&lt;li&gt;\r\n\t&lt;span class=\"results error\"&gt;0 right, 0 wrong, 0 ignored, 1 exceptions&lt;/span&gt;\r\n\t&lt;a href=\"#(AliasTest)1\" class=\"link\"&gt;(AliasTest)&lt;/a&gt;\r\n\t&lt;span class=\"\"&gt;(0.047 seconds)&lt;/span&gt;\r\n&lt;/li&gt;\r\n";
+&lt;/script&gt;
+
+49
+&lt;script&gt;document.getElementById("test-action").innerHTML = "";&lt;/script&gt;
+
+85
+&lt;script&gt;document.getElementById("test-action").innerHTML = "&lt;a href=\"?executionLog\" class=\"ok\"&gt;Execution Log&lt;/a&gt;\r\n";&lt;/script&gt;
+
+27
+&lt;script&gt;initErrorMetadata();&lt;/script&gt;
+
+140
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 0 right, 0 wrong, 0 ignored, 1 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 0 right, 0 wrong, 0 ignored, 1 exceptions (0.705 seconds)";document.getElementById("test-summary").className = "error";&lt;/script&gt;
+
+2
+
+
+
+709
+
+&lt;div id="-shortcut-keys" class="modal-dialog"&gt;
+ &lt;div&gt;
+  &lt;h4&gt;Keyboard Shortcuts &lt;kbd&gt;?&lt;/kbd&gt;&lt;/h4&gt;
+  &lt;div&gt;
+  &lt;ul class="help-list"&gt;
+
+   &lt;li&gt;&lt;h4&gt;General&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;t&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Test page or suite&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;e&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Edit page&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;v&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;View page (after test)&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;a&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Add new page&lt;/span&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;&lt;h4&gt;Go To&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g u&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;User Guide&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g q&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Quick Reference Guide&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g f&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Full Reference Guide&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g c&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Recent Changes&lt;/span&gt;
+   &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class="help-list"&gt;
+   &lt;li&gt;&lt;h4&gt;Edit Mode&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;CTRL+s&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Save page&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;ESC&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Cancel edit&lt;/span&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;&lt;h4&gt;Tools&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;p&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Properties&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;w&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Where used?&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;AK+v&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Versions&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;AK+h&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Page History&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;/&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Focus on search bar&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;s&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Open search page&lt;/span&gt;
+   &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;a href="javascript:history.back()" class="button"&gt;Close&lt;/a&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src="
+1
+/
+71
+files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&gt;&lt;/script&gt;
+
+
+&lt;script type="text/javascript"&gt;
+  
+2
+
+ 
+3a
+  Mousetrap.bind('v', function() { window.location.href ="
+9
+AliasTest
+9
+"; });
+
+ 
+3c
+    Mousetrap.bind('t', function() { window.location.href ="
+9
+AliasTest
+d
+?test"; });
+ 
+1
+ 
+2
+  
+3c
+    Mousetrap.bind('e', function() { window.location.href ="
+9
+AliasTest
+e
+?edit"; });
+  
+2
+  
+3c
+    Mousetrap.bind('a', function() { window.location.href ="
+9
+AliasTest
+d
+?new"; });
+  
+2
+  
+3c
+    Mousetrap.bind('p', function() { window.location.href ="
+9
+AliasTest
+14
+?properties"; });
+  
+2
+  
+3c
+    Mousetrap.bind('w', function() { window.location.href ="
+9
+AliasTest
+13
+?whereUsed"; });
+  
+2
+  
+3c
+    Mousetrap.bind('s', function() { window.location.href ="
+9
+AliasTest
+bf
+?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+  
+2
+  
+17b
+    Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+    Mousetrap.bind('g q', function() { window.open(".FitNesse.UserGuide.QuickReferenceGuide", "_blank"); });
+    Mousetrap.bind('g f', function() { window.open(".FitNesse.FullReferenceGuide", "_blank"); });
+    Mousetrap.bind('g c', function() { window.location.href ="RecentChanges"; });
+  
+5a
+
+ Mousetrap.bind('?', function() { window.location.hash = "-shortcut-keys"; });
+
+&lt;/script&gt;
+1
+	
+12
+  &lt;/article&gt;
+  
+  
+e
+  &lt;footer&gt;
+   
+e
+  &lt;/footer&gt;
+  
+14
+  
+ &lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 1
+
+0
+
+</td></tr>
+</table>
+<div class="collapsible closed teardown"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><hr/>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td><span class="pass">tear down</span></td>
+	</tr>
+</table>
+<br/></div>
+</div>
+</article></body></html>

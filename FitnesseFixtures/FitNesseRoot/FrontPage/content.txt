@@ -1,0 +1,14 @@
+!define TEST_SYSTEM {slim}
+!define ROOT_LOCATION {C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures}
+#!define ENV {local}
+!define ENV {Vagrant}
+!define CREDENTIALS_FILE {${ROOT_LOCATION}/configs/config_${ENV}.properties}
+!define LIB_DIR {${ROOT_LOCATION}/lib}
+!path ${LIB_DIR}/fitnesse-standalone.jar
+!path ${LIB_DIR}/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar
+#this is the location of the main fixture code. 
+!path ${ROOT_LOCATION}/target/FitnesseFixtures-0.0.1-SNAPSHOT.jar
+!path ${LIB_DIR}/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar
+
+
+[[BIG Testing Suite][FrontPage.TestSuiteForBig]]

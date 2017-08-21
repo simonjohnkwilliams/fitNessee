@@ -1,0 +1,158 @@
+<html><head><title>FrontPage.TestSuiteForBig.FMSGenericTest</title><meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/><link rel='stylesheet' type='text/css' href='css/fitnesse.css'/><script src='javascript/jquery-1.11.3.min.js' type='text/javascript'></script><script src='javascript/fitnesse.js' type='text/javascript'></script></head><body><header><h2>FrontPage.TestSuiteForBig.FMSGenericTest</h2></header><article><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FrontPage.TestSuiteForBig.SetUp">.FrontPage.TestSuiteForBig.SetUp</a> <a href="FrontPage.TestSuiteForBig.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">main.Fixtures.BIG</span></td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>Comment</td>
+		<td>Script:FilePollerAndMover</td>
+		<td>/localRunTools/SFTP Server/data/fitnesseTest/in</td>
+		<td>/localRunTools/SFTP Server/data/fitnesseTest/out</td>
+	</tr>
+	<tr class="slimRowTitle">
+		<td>check</td>
+		<td colspan="3">pollFile</td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>Comment</td>
+		<td>FilePollerAndMover</td>
+	</tr>
+	<tr class="slimRowTitle">
+		<td>locationToPoll</td>
+		<td>locationToMove</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>/localRunTools/SFTP Server/data/fitnesseTest/in</td>
+		<td>/localRunTools/SFTP Server/data/fitnesseTest/out</td>
+	</tr>
+</table>
+<br/><div class="contents">
+	<b>Contents:</b>
+	<ul class="toc1"/><ul class="toc1"/>
+</div>
+</div>
+</div>
+<br/>Test 1 - Move the file to the test dir location<br/><br/>Copy the file locally from the test directory to the file move directory. We so this so we know the original test file is not deleted and we can clear down all the ENV's after<br/>the tests safely. <br/><br/><table>
+	<tr>
+		<td colspan="4">MoveFileFixture <span class="error">Could not invoke constructor for MoveFileFixture[0]</span></td>
+	</tr>
+	<tr>
+		<td>origin</td>
+		<td>destination</td>
+		<td>isMoved?</td>
+		<td>error?</td>
+	</tr>
+	<tr>
+		<td>/TestFiles/Interface76/EmptyTestFile.txt <span class="error">The instance decisionTable_1.setOrigin. does not exist</span></td>
+		<td>/SFTP/out/interface1TestFile.txt <span class="error">The instance decisionTable_1.setDestination. does not exist</span></td>
+		<td>true <span class="error">The instance decisionTable_1.isMoved. does not exist</span></td>
+		<td>null <span class="error">The instance decisionTable_1.error. does not exist</span></td>
+	</tr>
+</table>
+<br/><br/><br/><br/><table>
+	<tr>
+		<td colspan="8">PutFileOnFMS <span class="error">Could not invoke constructor for PutFileOnFMS[0]</span></td>
+	</tr>
+	<tr>
+		<td>localfilepath</td>
+		<td>remotefilename</td>
+		<td>remotedir</td>
+		<td>port</td>
+		<td>protocol</td>
+		<td>configFile</td>
+		<td>hasMoved?</td>
+		<td>error?</td>
+	</tr>
+	<tr>
+		<td>C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/SFTP/out/interface1TestFile.txt <span class="error">The instance decisionTable_2.setLocalfilepath. does not exist</span></td>
+		<td>interface1TestFile.txt <span class="error">The instance decisionTable_2.setRemotefilename. does not exist</span></td>
+		<td>./SFTP2/in <span class="error">The instance decisionTable_2.setRemotedir. does not exist</span></td>
+		<td>2222 <span class="error">The instance decisionTable_2.setPort. does not exist</span></td>
+		<td>SFTP <span class="error">The instance decisionTable_2.setProtocol. does not exist</span></td>
+		<td>C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties <span class="error">The instance decisionTable_2.setConfigFile. does not exist</span></td>
+		<td>true <span class="error">The instance decisionTable_2.hasMoved. does not exist</span></td>
+		<td>null <span class="error">The instance decisionTable_2.error. does not exist</span></td>
+	</tr>
+</table>
+<br/>Test 3 - Check if the file is on the remote server before trying to run it. <br/><table>
+	<tr>
+		<td colspan="7">CheckRemoteFileAvailable <span class="error">Could not invoke constructor for CheckRemoteFileAvailable[0]</span></td>
+	</tr>
+	<tr>
+		<td>remotefilename</td>
+		<td>remotedir</td>
+		<td>port</td>
+		<td>protocol</td>
+		<td>configFile</td>
+		<td>isAvailable?</td>
+		<td>error?</td>
+	</tr>
+	<tr>
+		<td>interface1TestFile.txt <span class="error">The instance decisionTable_3.setRemotefilename. does not exist</span></td>
+		<td>./SFTP2/in <span class="error">The instance decisionTable_3.setRemotedir. does not exist</span></td>
+		<td>2222 <span class="error">The instance decisionTable_3.setPort. does not exist</span></td>
+		<td>SFTP <span class="error">The instance decisionTable_3.setProtocol. does not exist</span></td>
+		<td>C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties <span class="error">The instance decisionTable_3.setConfigFile. does not exist</span></td>
+		<td>true <span class="error">The instance decisionTable_3.isAvailable. does not exist</span></td>
+		<td>null <span class="error">The instance decisionTable_3.error. does not exist</span></td>
+	</tr>
+</table>
+<br/>Test 4 - Run the FMS move script on the remote server. <br/>Here we need to run the remote script on the server. We neede to find out though what this actual script is doing. <br/><table>
+	<tr>
+		<td colspan="4">ExecuteRemoteScriptFixture <span class="error">Could not invoke constructor for ExecuteRemoteScriptFixture[0]</span></td>
+	</tr>
+	<tr>
+		<td>remoteScriptLocation</td>
+		<td>configFile</td>
+		<td>isRun?</td>
+		<td>error?</td>
+	</tr>
+	<tr>
+		<td>./SFTP2/in/runner.sh <span class="error">The instance decisionTable_4.setRemoteScriptLocation. does not exist</span></td>
+		<td>C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties <span class="error">The instance decisionTable_4.setConfigFile. does not exist</span></td>
+		<td>true <span class="error">The instance decisionTable_4.isRun. does not exist</span></td>
+		<td>null <span class="error">The instance decisionTable_4.error. does not exist</span></td>
+	</tr>
+</table>
+<br/>Test 5 - Pull the remote file from the FMS Server. <br/><table>
+	<tr>
+		<td colspan="8">GetFileOnFMS <span class="error">Could not invoke constructor for GetFileOnFMS[0]</span></td>
+	</tr>
+	<tr>
+		<td>localfilepath</td>
+		<td>remotefilename</td>
+		<td>remotedir</td>
+		<td>port</td>
+		<td>protocol</td>
+		<td>configFile</td>
+		<td>hasMoved?</td>
+		<td>error?</td>
+	</tr>
+	<tr>
+		<td>C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/SFTP/in/interface3TestFile.txt <span class="error">The instance decisionTable_5.setLocalfilepath. does not exist</span></td>
+		<td>interface1TestFile2.txt <span class="error">The instance decisionTable_5.setRemotefilename. does not exist</span></td>
+		<td>./SFTP2/out <span class="error">The instance decisionTable_5.setRemotedir. does not exist</span></td>
+		<td>2222 <span class="error">The instance decisionTable_5.setPort. does not exist</span></td>
+		<td>SFTP <span class="error">The instance decisionTable_5.setProtocol. does not exist</span></td>
+		<td>C:/ws/fitnessepoc/Fitnesse/FitnesseFixtures/configs/config_Vagrant.properties <span class="error">The instance decisionTable_5.setConfigFile. does not exist</span></td>
+		<td>true <span class="error">The instance decisionTable_5.hasMoved. does not exist</span></td>
+		<td>null <span class="error">The instance decisionTable_5.error. does not exist</span></td>
+	</tr>
+</table>
+<br/>Test 6 - Do we need to do a pattern match here?<br/><br/><br/><br/><br/>&lt;test page&gt;<br/><div class="collapsible closed teardown"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FrontPage.TestSuiteForBig.TearDown">.FrontPage.TestSuiteForBig.TearDown</a> <a href="FrontPage.TestSuiteForBig.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><br/>Stop the poller<br/><br/>Clear down the directories. <br/><br/><br/><div class="contents">
+	<b>Contents:</b>
+	<ul class="toc1"/><ul class="toc1"/>
+</div>
+</div>
+</div>
+</article></body></html>

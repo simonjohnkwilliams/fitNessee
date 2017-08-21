@@ -1,0 +1,7 @@
+
+Stop the poller
+
+Clear down the directories. 
+
+
+!contents -R2 -g -p -f -h

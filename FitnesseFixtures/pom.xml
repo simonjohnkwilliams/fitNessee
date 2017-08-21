@@ -1,0 +1,129 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>FitnesseFixtures</groupId>
+  <artifactId>FitnesseFixtures</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.6</version>
+</dependency>
+<dependency>
+    <groupId>org.fitnesse</groupId>
+    <artifactId>fitnesse</artifactId>
+    <version>20121220</version>
+</dependency>
+	<dependency>
+	    <groupId>com.jcraft</groupId>
+	    <artifactId>jsch</artifactId>
+	    <version>0.1.54</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+	<dependency>
+	    <groupId>commons-net</groupId>
+	    <artifactId>commons-net</artifactId>
+	    <version>3.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+	<dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>2.5</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/xmlunit/xmlunit -->
+	<dependency>
+	    <groupId>xmlunit</groupId>
+	    <artifactId>xmlunit</artifactId>
+	    <version>1.6</version>
+	    <scope>compile</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+   </dependency>
+   <dependency>
+	    <groupId>com.ibm.mq</groupId>
+  		<artifactId>mq</artifactId>
+ 		<version>7.5.0.5</version>
+   </dependency>
+    <dependency>
+	    <groupId>com.ibm.mq.headers</groupId>
+  		<artifactId>headers</artifactId>
+ 		<version>7.5.0.5</version>
+   </dependency>
+    <dependency>
+	    <groupId>com.ibm.mq.jmqi</groupId>
+  		<artifactId>jmqi</artifactId>
+ 		<version>7.5.0.5</version>
+   </dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.5.3</version>
+	</dependency>
+	<dependency>
+    <groupId>com.spotify</groupId>
+    <artifactId>docker-maven-plugin</artifactId>
+    <version>1.0.0</version>
+</dependency>
+	<dependency>
+    <groupId>axis</groupId>
+    <artifactId>axis</artifactId>
+    <version>1.4</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+        <excludes>**/main/fixtures/BIG/Depricated/*.*</excludes>
+       	  <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+	  <groupId>com.spotify</groupId>
+	  <artifactId>dockerfile-maven-plugin</artifactId>
+	  <version>1.0.0</version>
+	  <executions>
+	    <execution>
+	      <id>default</id>
+	      <goals>
+	        <goal>build</goal>
+	        <goal>push</goal>
+	      </goals>
+	    </execution>
+	  </executions>
+	  <configuration>
+	    <repository>spotify/foobar</repository>
+	    <tag>${project.version}</tag>
+	  </configuration>
+	</plugin>
+    </plugins>
+   </build>
+	<profiles>
+    <profile>
+     	<repositories>
+	     	<repository>
+			    <id>lib</id>
+			    <name>lib</name>
+			    <releases>
+			        <enabled>true</enabled>
+			        <checksumPolicy>ignore</checksumPolicy>
+			    </releases>
+			    <snapshots>
+			        <enabled>false</enabled>
+			    </snapshots>
+			    <url>file:\\${project.basedir}\lib</url>
+			</repository>
+		</repositories>
+	</profile>
+	</profiles>
+</project>

@@ -1,0 +1,1065 @@
+<html><head><title>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ScenarioLibraryTestSuite.NoScenarioSectionIfThereAreNone</title><meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/><link rel='stylesheet' type='text/css' href='css/fitnesse.css'/><script src='javascript/jquery-1.11.3.min.js' type='text/javascript'></script><script src='javascript/fitnesse.js' type='text/javascript'></script></head><body><header><h2>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.ScenarioLibraryTestSuite.NoScenarioSectionIfThereAreNone</h2></header><article><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td>page</td>
+		<td>with content</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td colspan="2">@content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>nothing</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td colspan="2"></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given test page</td>
+		<td>page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td colspan="2">@page</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td>a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given slim test page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>!define TEST_SYSTEM {slim}</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">&lt;a href="@target"</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@source</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have creating link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have creating link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have creating link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should not contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should not contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td>text</td>
+		<td>in line</td>
+		<td>symbol</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>$IT</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>$@symbol=</td>
+		<td>line number containing</td>
+		<td colspan="3">@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should match</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should match</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page in debug mode</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test&amp;debug</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for suite</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?suite</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>its test results should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>test results for page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test ressults for page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>widget</td>
+		<td>wikiText</td>
+		<td>should render</td>
+		<td>htmlText</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>WidgetPage</td>
+		<td>with content</td>
+		<td colspan="2">@wikiText</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>WidgetPage</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@htmlText</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>the line</td>
+		<td>after</td>
+		<td>should come after</td>
+		<td>before</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo int</td>
+		<td>$@before</td>
+		<td colspan="2">&lt; $@after</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td colspan="3">pass</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo</td>
+		<td>pass</td>
+		<td>pass</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show collapsed</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show Symbol</td>
+		<td>result</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>then</td>
+		<td>pass</td>
+		<td>assertions pass,</td>
+		<td>fail</td>
+		<td>fail,</td>
+		<td>ignore</td>
+		<td>are ignored</td>
+		<td>exception</td>
+		<td>exceptions thrown</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="8">Assertions:&lt;[^&lt;]*@pass right, @fail wrong, @ignore ignored, @exception exceptions</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>Assertions:&lt;[^&lt;]*exceptions</td>
+		<td>contents</td>
+		<td colspan="6">0</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and cell</td>
+		<td>text</td>
+		<td>has result</td>
+		<td>result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">class="@result"&gt;@text&lt;</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>class="[^"]+"&gt;@text&lt;</td>
+		<td>contents</td>
+		<td>0</td>
+	</tr>
+</table>
+<br/><span class="meta">variable defined: TestSTART=@@@START: Test specific content</span>
+ <br/><span class="meta">variable defined: TestEND=@@@END: Test specific content</span>
+ <br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and TestSystem setup is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and setup content is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and test content is</td>
+		<td colspan="2">content</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>$IT</td>
+		<td>with content</td>
+		<td>$CONTENT @@@START: Test specific content@content@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>$IT</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>contents</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$HTML_Result=</td>
+		<td>found</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML input</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>pageHtml</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>$HTML_Input=</td>
+		<td>found</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td>get value</td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get collapsed executon log for page</td>
+		<td colspan="2">source</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?executionLog</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested and HTML is extracted</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>when page</td>
+		<td>@source</td>
+		<td colspan="2">is tested</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td colspan="4">get HTML result</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td colspan="4">get HTML input</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>Import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">fitnesse.fixtures</span></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td><span class="pass">SetUp</span></td>
+		<td>Plugins=fitnesse.testsystems.slim.CustomTableAliasPlugin
+CustomComparators=glob:fitnesse.testsystems.slim.GlobComparator</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>Library</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">page driver</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td><span class="pass">echo fixture</span></td>
+	</tr>
+</table>
+</div>
+</div>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td colspan="2">script</td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="ignore">given slim test page</td>
+		<td class="ignore">TestPage</td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="2"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given slim test page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="ignore">given page</td>
+		<td class="ignore">TestPage</td>
+		<td class="ignore">with content</td>
+		<td class="ignore">!define TEST_SYSTEM {slim}</td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td>page</td>
+		<td>with content</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>TestPage</td>
+		<td>with content</td>
+		<td colspan="2">!define TEST_SYSTEM {slim}</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT&lt;-[TestPage]</td>
+		<td>echo</td>
+		<td colspan="3">TestPage</td>
+	</tr>
+</table></td></tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>TestPage</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table></td></tr>
+	<tr class="scenario closed">
+		<td class="pass">it should not contain</td>
+		<td class="pass">Scenario Libraries</td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="2"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should not contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="scenario closed">
+		<td class="pass">page</td>
+		<td class="pass">$IT->[TestPage]</td>
+		<td class="pass">should not contain</td>
+		<td class="pass">Scenario Libraries</td>
+	</tr><tr class="scenario-detail closed-detail"><td colspan="4"><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>$IT->[TestPage]</td>
+		<td colspan="2"><span class="pass">200</span></td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td><span class="pass">reject</span></td>
+		<td>content contains</td>
+		<td colspan="3">Scenario Libraries</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	<td>HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Content-Length: 7407
+Content-Type: text/html; charset=UTF-8
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+
+  &lt;title&gt;TestPage&lt;/title&gt;
+    &lt;!--[if lt IE 9]&gt;
+   &lt;script&gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &lt;/script&gt;
+  &lt;![endif]--&gt;
+  
+  &lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/bootstrap/css/fitnesse-bootstrap.css"&gt;
+
+  &lt;script src="/files/fitnesse/javascript/jquery-1.11.3.min.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+
+  &lt;script src="/files/fitnesse/bootstrap/js/bootstrap.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="/files/fitnesse/bootstrap/js/respond.js" type="text/javascript"&gt;&lt;/script&gt;
+
+ &lt;/head&gt;
+ &lt;body class="wikiPage"&gt;
+
+  &lt;nav class="navbar-fixed-top " role="navigation"&gt;
+   &lt;div class="navbar navbar-default"&gt;
+   &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class="navbar-header"&gt;
+     &lt;a class="navbar-brand" href="/FrontPage"&gt;&lt;span&gt;FitNesse&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;ul class="nav navbar-nav"&gt;
+                &lt;li&gt;&lt;a href="TestPage?test" accesskey="t"&gt;Test&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="TestPage?edit" accesskey="e"&gt;Edit&lt;/a&gt;&lt;/li&gt;
+            
+                        &lt;li&gt;&lt;a href="TestPage?new"&gt;Add&lt;/a&gt;&lt;/li&gt;
+            
+    &lt;li id="tools" class="dropdown" aria-haspopup="true"&gt;&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Tools &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+                        &lt;ul class="dropdown-menu"&gt;
+                            &lt;li&gt;&lt;a href="TestPage?properties" accesskey="p"&gt;Properties&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="TestPage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="TestPage?versions" accesskey="v"&gt;Versions&lt;/a&gt;&lt;/li&gt;
+            
+                            &lt;li class="divider"&gt;&lt;a href="TestPage?refactor&amp;amp;type=rename"&gt;Rename&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="TestPage?refactor&amp;amp;type=move"&gt;Move&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="TestPage?refactor&amp;amp;type=replace"&gt;Replace&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="TestPage?deletePage"&gt;Delete&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li  class="divider"&gt;&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="?search" accesskey="s"&gt;Search&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;&lt;/li&gt;
+            
+                            &lt;li class="divider"&gt;&lt;a href="?testHistory"&gt;Test History&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="TestPage?pageHistory" accesskey="h"&gt;Page History&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="?test&amp;amp;remote_debug"&gt;Remote Debug&lt;/a&gt;&lt;/li&gt;
+                        
+                            &lt;li class="divider"&gt;&lt;a href="/FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;form class="navbar-form search" role="search" action="?search"&gt;
+ &lt;input type="hidden" name="responder" value="search" /&gt;
+ &lt;input type="hidden" name="searchScope" value="root" /&gt;
+ &lt;input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search for page" /&gt;
+ &lt;input type="hidden" name="searchType" value="Search Titles" /&gt;
+&lt;/form&gt;
+    
+   &lt;/div&gt;
+   &lt;ol class="page-actions btn-group"&gt;
+ &lt;li class="expandall btn btn-xs"&gt;Expand All&lt;/li&gt;
+ &lt;li class="collapseall btn btn-xs"&gt;Collapse All&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="breadcrumb"&gt;
+ &lt;li&gt;TestPage&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/nav&gt;
+
+  &lt;header&gt;
+      &lt;/header&gt;
+  
+  &lt;article&gt;
+   &lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;
+
+
+&lt;div id="-shortcut-keys" class="modal-dialog"&gt;
+ &lt;div&gt;
+  &lt;h4&gt;Keyboard Shortcuts &lt;kbd&gt;?&lt;/kbd&gt;&lt;/h4&gt;
+  &lt;div&gt;
+  &lt;ul class="help-list"&gt;
+
+   &lt;li&gt;&lt;h4&gt;General&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;t&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Test page or suite&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;e&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Edit page&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;v&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;View page (after test)&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;a&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Add new page&lt;/span&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;&lt;h4&gt;Go To&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g u&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;User Guide&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g q&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Quick Reference Guide&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g f&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Full Reference Guide&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;g c&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Recent Changes&lt;/span&gt;
+   &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class="help-list"&gt;
+   &lt;li&gt;&lt;h4&gt;Edit Mode&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;CTRL+s&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Save page&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;ESC&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Cancel edit&lt;/span&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;&lt;h4&gt;Tools&lt;/h4&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;p&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Properties&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;w&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Where used?&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;AK+v&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Versions&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;AK+h&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Page History&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;/&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Focus on search bar&lt;/span&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+    &lt;kbd&gt;s&lt;/kbd&gt;
+    &lt;span class="help-key-def"&gt;Open search page&lt;/span&gt;
+   &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;a href="javascript:history.back()" class="button"&gt;Close&lt;/a&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&gt;&lt;/script&gt;
+
+
+&lt;script type="text/javascript"&gt;
+  
+   Mousetrap.bind('v', function() { window.location.href ="TestPage"; });
+
+     Mousetrap.bind('t', function() { window.location.href ="TestPage?test"; });
+        Mousetrap.bind('e', function() { window.location.href ="TestPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="TestPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="TestPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="TestPage?whereUsed"; });
+        Mousetrap.bind('s', function() { window.location.href ="TestPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+    Mousetrap.bind('g q', function() { window.open(".FitNesse.UserGuide.QuickReferenceGuide", "_blank"); });
+    Mousetrap.bind('g f', function() { window.open(".FitNesse.FullReferenceGuide", "_blank"); });
+    Mousetrap.bind('g c', function() { window.location.href ="RecentChanges"; });
+  
+ Mousetrap.bind('?', function() { window.location.hash = "-shortcut-keys"; });
+
+&lt;/script&gt;  &lt;/article&gt;
+  
+    &lt;footer&gt;
+     &lt;/footer&gt;
+    
+ &lt;/body&gt;
+&lt;/html&gt;
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+</table>
+<br/><br/><div class="collapsible closed teardown"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><hr/>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td><span class="pass">tear down</span></td>
+	</tr>
+</table>
+<br/></div>
+</div>
+</article></body></html>

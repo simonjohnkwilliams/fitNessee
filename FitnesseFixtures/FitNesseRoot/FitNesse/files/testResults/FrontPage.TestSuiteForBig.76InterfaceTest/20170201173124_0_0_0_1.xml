@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteForBig.76InterfaceTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>8</exceptions>
+    </counts>
+    <date>2017-02-01T17:31:24+00:00</date>
+    <runTimeInMillis>175</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fixtures.BIG&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;This fixture will take the following variables&lt;br/&gt;&lt;br/&gt;fileFromLocation - the location where the test file resides (this should be local to fitnesse)&lt;br/&gt;fileToLocation - The remote location where we are placing the file&lt;br/&gt;fileFromName - The file name we are picking up to move&lt;br/&gt;fileToName - (Optional) the name that we want to call the file when moved. If blank will keep the from name.&lt;br/&gt;keyPairFileName - this holds the server name and the security key location to access the remote box. &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="3" class="error"&gt;AddFixture&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: Fixtures/BIG/AddFixture (wrong name: main/Fixtures/BIG/AddFixture)
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.8.0_121]
+	at java.lang.ClassLoader.defineClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.net.URLClassLoader.defineClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.net.URLClassLoader.access$100(Unknown Source) [rt.jar:1.8.0_121]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.8.0_121]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_121]
+	at java.net.URLClassLoader.findClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.8.0_121]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.8.0_121]
+	at java.lang.Class.forName(Unknown Source) [rt.jar:1.8.0_121]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.getClass(DefaultInteraction.java:66) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.searchPathsForClass(DefaultInteraction.java:56) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:52) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:79) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;a&lt;/td&gt;
+		&lt;td&gt;b&lt;/td&gt;
+		&lt;td&gt;sum?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance decisionTable_1.setA. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;The instance decisionTable_1.setB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3 &lt;span class="error"&gt;The instance decisionTable_1.sum. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;The instance decisionTable_1.setA. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;The instance decisionTable_1.setB. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3 &lt;span class="error"&gt;The instance decisionTable_1.sum. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;*!&lt;br/&gt;&lt;h1&gt;Move File to Location for upload FitNesse Test&lt;/h1&gt;
+&lt;br/&gt;!|Fixtures.BIG.LoadFileFixture                                                                                                                                             |&lt;br/&gt;|fileFromLocation                       |fileToLocation                                |fileFromName      |fileToName|keyPairFileName                           |hasMoved?&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;/FitnesseFixtures/TestFiles/Interface76 &lt;span class="error"&gt;Could not invoke constructor for FitnesseFixturesTestFilesInterface76[5]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/var/opt/transfers/I200006/pub/sap/infile/romf&lt;/td&gt;
+		&lt;td&gt;/EmptyTestFile.txt&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;/FitnesseFixtures/keypairs/I200375/keypair&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;</content>
+    <relativePageName>76InterfaceTest</relativePageName>
+        <tags>Big, Interface76</tags>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fixtures.BIG'}</instruction>
+        <slimResult>pass(Fixtures.BIG)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fixtures.BIG</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='AddFixture', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setA', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setA. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setB', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setB. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='sum', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_7</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.sum. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setA', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setA. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setB', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setB. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='sum', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_12</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.sum. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='FitnesseFixturesTestFilesInterface76', args=[/var/opt/transfers/I200006/pub/sap/infile/romf, /EmptyTestFile.txt, , /FitnesseFixtures/keypairs/I200375/keypair, true]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for FitnesseFixturesTestFilesInterface76[5]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\ws\fitnessepoc\Fitnesse\FitnesseFixtures\lib\fitnesse-standalone.jar;lib/fitnesse-standalone.jar;target/classes/main fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>676</totalRunTimeInMillis>
+</testResults>
+

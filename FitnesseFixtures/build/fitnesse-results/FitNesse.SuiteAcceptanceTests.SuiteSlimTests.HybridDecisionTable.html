@@ -1,0 +1,954 @@
+<html><head><title>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable</title><meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/><link rel='stylesheet' type='text/css' href='css/fitnesse.css'/><script src='javascript/jquery-1.11.3.min.js' type='text/javascript'></script><script src='javascript/fitnesse.js' type='text/javascript'></script></head><body><header><h2>FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable</h2></header><article><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td>page</td>
+		<td>with content</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td colspan="2">@content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>nothing</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td colspan="2"></td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given test page</td>
+		<td>page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td colspan="2">@page</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td>a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>given slim test page</td>
+		<td colspan="2">page</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>@page</td>
+		<td>with content</td>
+		<td>!define TEST_SYSTEM {slim}</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>@page</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">&lt;a href="@target"</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>$IT=</td>
+		<td>echo</td>
+		<td colspan="3">@source</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and it should have link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should have creating link to</td>
+		<td>target</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should have creating link to</td>
+		<td colspan="2">target</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should have creating link to</td>
+		<td>@target</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>page</td>
+		<td>source</td>
+		<td>should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should not contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should not contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should contain</td>
+		<td>text</td>
+		<td>in line</td>
+		<td>symbol</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>$IT</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>$@symbol=</td>
+		<td>line number containing</td>
+		<td colspan="3">@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>it should match</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>page</td>
+		<td>$IT</td>
+		<td>should match</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for page in debug mode</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test&amp;debug</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test results for suite</td>
+		<td>source</td>
+		<td>should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?suite</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>its test results should contain</td>
+		<td colspan="2">text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>test results for page</td>
+		<td>$IT</td>
+		<td>should contain</td>
+		<td>@text</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>test ressults for page</td>
+		<td>source</td>
+		<td>should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td colspan="3">@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should match</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and should not contain</td>
+		<td>text</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>reject</td>
+		<td>content contains</td>
+		<td>@text</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>widget</td>
+		<td>wikiText</td>
+		<td>should render</td>
+		<td>htmlText</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td>create page</td>
+		<td>WidgetPage</td>
+		<td>with content</td>
+		<td colspan="2">@wikiText</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>WidgetPage</td>
+		<td colspan="2">200</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">@htmlText</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="4">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>the line</td>
+		<td>after</td>
+		<td>should come after</td>
+		<td>before</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo int</td>
+		<td>$@before</td>
+		<td colspan="2">&lt; $@after</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td colspan="3">pass</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>echo</td>
+		<td>pass</td>
+		<td>pass</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show collapsed</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="2">@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>show Symbol</td>
+		<td>result</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>then</td>
+		<td>pass</td>
+		<td>assertions pass,</td>
+		<td>fail</td>
+		<td>fail,</td>
+		<td>ignore</td>
+		<td>are ignored</td>
+		<td>exception</td>
+		<td>exceptions thrown</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="8">Assertions:&lt;[^&lt;]*@pass right, @fail wrong, @ignore ignored, @exception exceptions</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>Assertions:&lt;[^&lt;]*exceptions</td>
+		<td>contents</td>
+		<td colspan="6">0</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and cell</td>
+		<td>text</td>
+		<td>has result</td>
+		<td>result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>ensure</td>
+		<td>content matches</td>
+		<td colspan="3">class="@result"&gt;@text&lt;</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td>extract match;</td>
+		<td>class="[^"]+"&gt;@text&lt;</td>
+		<td>contents</td>
+		<td>0</td>
+	</tr>
+</table>
+<br/><span class="meta">variable defined: TestSTART=@@@START: Test specific content</span>
+ <br/><span class="meta">variable defined: TestEND=@@@END: Test specific content</span>
+ <br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and TestSystem setup is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and setup content is</td>
+		<td>content</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>$CONTENT=</td>
+		<td>echo</td>
+		<td>$CONTENT
+@content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>and test content is</td>
+		<td colspan="2">content</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>given page</td>
+		<td>$IT</td>
+		<td>with content</td>
+		<td>$CONTENT @@@START: Test specific content@content@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td>make</td>
+		<td>$IT</td>
+		<td colspan="2">a test page</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML result</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>contents</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$HTML_Result=</td>
+		<td>found</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get HTML input</td>
+	</tr>
+	<tr class="slimRowColor8">
+		<td>start</td>
+		<td>Response Examiner.</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>setType</td>
+		<td>pageHtml</td>
+	</tr>
+	<tr class="slimRowColor6">
+		<td>setPattern</td>
+		<td>@@@START: Test specific content[^&lt;]*(.*&gt;)\s*@@@END: Test specific content</td>
+	</tr>
+	<tr class="slimRowColor7">
+		<td>setGroup</td>
+		<td>1</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>$HTML_Input=</td>
+		<td>found</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td>get value</td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>get collapsed executon log for page</td>
+		<td colspan="2">source</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?executionLog</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>show</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>check</td>
+		<td>request page</td>
+		<td>@source?test</td>
+		<td>200</td>
+	</tr>
+	<tr class="slimRowColor2">
+		<td>show collapsed</td>
+		<td colspan="3">content</td>
+	</tr>
+</table>
+<br/><table>
+	<tr class="slimRowTitle">
+		<td>scenario</td>
+		<td>when page</td>
+		<td>source</td>
+		<td>is tested and HTML is extracted</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>when page</td>
+		<td>@source</td>
+		<td colspan="2">is tested</td>
+	</tr>
+	<tr class="slimRowColor4">
+		<td colspan="4">get HTML result</td>
+	</tr>
+	<tr class="slimRowColor3">
+		<td colspan="4">get HTML input</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div><table>
+	<tr class="slimRowTitle">
+		<td>Import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">fitnesse.fixtures</span></td>
+	</tr>
+</table>
+<br/><br/><table>
+	<tr class="slimRowTitle">
+		<td>Library</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">echo fixture</span></td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<br/>The Hybrid Decision Table is a combination of the Decision Table  and the Dynamic Decision Table. <br/>A decision table requires for each table column the definition of a method. <br/>This is impractical when you deal with structured data that has a varying size like: hash maps, XML, properties, database tables, etc.<br/>The number of methods you need to write could be infinite.<br/><br/>A dynamic decision table has just one method which is called for all columns and your fixture has to do the dispatching. <br/>This solves the above problem but dispatching should be done by the test system and not by your fixture.<br/><br/>Sometimes you want both features in one table and that is when you use the Hybrid Decision table.<br/><br/>The Hybrid Decision Table allows the methods called for each column to be <br/>redefined and method parameters can be extracted from the column names.<br/><br/><br/><br/>Example<br/><br/><div class="collapsible closed"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Setup</p>
+	<div><br/><table>
+	<tr class="slimRowTitle">
+		<td>import</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td><span class="pass">fitnesse.slim.test</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td><span class="pass">java.util</span></td>
+	</tr>
+</table>
+<br/><h5>define some string variables (just to show that this is supported)</h5>
+<table>
+	<tr class="slimRowTitle">
+		<td><span class="pass">script: Test Query</span></td>
+		<td colspan="2">5</td>
+	</tr>
+	<tr class="slimRowColor9">
+		<td>$S1&lt;-[abcdefghijklmnopqrstuvwxyz]</td>
+		<td>echo</td>
+		<td>abcdefghijklmnopqrstuvwxyz</td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td>$S2&lt;-[123456789]</td>
+		<td>echo</td>
+		<td>123456789</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td>$S3&lt;-["The fox jumps over the wall."]</td>
+		<td>echo</td>
+		<td>"The fox jumps over the wall."</td>
+	</tr>
+</table>
+<br/><span class="meta">variable defined: SLIM_DT_GETTER=!-
+{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+  {
+    "Scope":"property\\s+(\\w*)\\s*",
+    "TargetName":"get property",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":"has Value\\s+'(\\w*)'\\s*",
+    "TargetName":"contains Value",
+    "Parameters":"$1"
+  }
+ ]
+}
+-!</span>
+<br/><span class="meta">variable defined: SLIM_DT_SETTER=!-
+{
+"FormatVersion":"1.0",
+"MethodExtractorRules":[
+  {
+    "Scope":"property\\s+(\\w*)\\s*",
+    "TargetName":"set property",
+    "Parameters":"$1"
+  },
+  {
+    "Scope":".+",
+    "TargetName":"$0",
+    "Parameters":""
+  }
+ ]
+}
+-!</span>
+<br/><br/></div>
+</div>
+<br/><h3>Based on your test cases you might expect or need to add a varying number of properties to a collection.</h3>
+<h4>Test Case with 2 properties</h4>
+<table>
+	<tr class="slimRowTitle">
+		<td colspan="9"><span class="pass">Properties</span></td>
+	</tr>
+	<tr class="slimRowTitle">
+		<td>#</td>
+		<td>property a</td>
+		<td>property b</td>
+		<td>size?</td>
+		<td>key set?</td>
+		<td>property a?</td>
+		<td>property b?</td>
+		<td>to string?</td>
+		<td>has Value '123456789' ?</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td></td>
+		<td>$S1->[abcdefghijklmnopqrstuvwxyz]</td>
+		<td>123456789</td>
+		<td><span class="pass">2</span></td>
+		<td><span class="pass">[b, a]</span></td>
+		<td><span class="pass">$S1-&gt;[abcdefghijklmnopqrstuvwxyz]</span></td>
+		<td><span class="pass">123456789</span></td>
+		<td><span class="pass">{b=123456789, a=abcdefghijklmnopqrstuvwxyz}</span></td>
+		<td><span class="pass">true</span></td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td></td>
+		<td>$S2->[123456789]</td>
+		<td>"The fox jumps over the wall."</td>
+		<td><span class="pass">2</span></td>
+		<td><span class="pass">[b, a]</span></td>
+		<td><span class="pass">123456789</span></td>
+		<td><span class="pass">$S3-&gt;["The fox jumps over the wall."]</span></td>
+		<td><span class="pass">{b="The fox jumps over the wall.", a=123456789}</span></td>
+		<td><span class="pass">true</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td></td>
+		<td>$S3->["The fox jumps over the wall."]</td>
+		<td>abcdefghijklmnopqrstuvwxyz</td>
+		<td><span class="pass">2</span></td>
+		<td><span class="pass">[b, a]</span></td>
+		<td><span class="pass">$S3-&gt;["The fox jumps over the wall."]</span></td>
+		<td><span class="pass">$S1-&gt;[abcdefghijklmnopqrstuvwxyz]</span></td>
+		<td><span class="pass">{b=abcdefghijklmnopqrstuvwxyz, a="The fox jumps over the wall."}</span></td>
+		<td><span class="pass">false</span></td>
+	</tr>
+</table>
+<br/><h4>Test Case with 3 properties added and 2 expected</h4>
+<table>
+	<tr class="slimRowTitle">
+		<td colspan="11"><span class="pass">Properties</span></td>
+	</tr>
+	<tr class="slimRowTitle">
+		<td>#</td>
+		<td>property NEW</td>
+		<td>property a</td>
+		<td>property b</td>
+		<td>size?</td>
+		<td>key set?</td>
+		<td>property NEW?</td>
+		<td>property b?</td>
+		<td>to string?</td>
+		<td>has Value '123456789' ?</td>
+		<td>has Value 'FitNesse'?</td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td></td>
+		<td>Hello</td>
+		<td>$S1->[abcdefghijklmnopqrstuvwxyz]</td>
+		<td>$S2->[123456789]</td>
+		<td><span class="pass">3</span></td>
+		<td><span class="ignore">[b, a, NEW]</span></td>
+		<td><span class="pass">Hello</span></td>
+		<td><span class="pass">123456789</span></td>
+		<td><span class="ignore">{b=123456789, a=abcdefghijklmnopqrstuvwxyz, NEW=Hello}</span></td>
+		<td><span class="pass">true</span></td>
+		<td><span class="pass">false</span></td>
+	</tr>
+	<tr class="slimRowColor0">
+		<td></td>
+		<td>FitNesse</td>
+		<td>$S2->[123456789]</td>
+		<td>$S3->["The fox jumps over the wall."]</td>
+		<td><span class="pass">3</span></td>
+		<td><span class="ignore">[b, a, NEW]</span></td>
+		<td><span class="ignore">FitNesse</span></td>
+		<td><span class="pass">$S3-&gt;["The fox jumps over the wall."]</span></td>
+		<td><span class="ignore">{b="The fox jumps over the wall.", a=123456789, NEW=FitNesse}</span></td>
+		<td><span class="pass">true</span></td>
+		<td><span class="pass">true</span></td>
+	</tr>
+	<tr class="slimRowColor1">
+		<td></td>
+		<td>World</td>
+		<td>$S3->["The fox jumps over the wall."]</td>
+		<td>$S1->[abcdefghijklmnopqrstuvwxyz]</td>
+		<td><span class="pass">3</span></td>
+		<td><span class="ignore">[b, a, NEW]</span></td>
+		<td><span class="pass">World</span></td>
+		<td><span class="pass">$S1-&gt;[abcdefghijklmnopqrstuvwxyz]</span></td>
+		<td><span class="pass">{b=abcdefghijklmnopqrstuvwxyz, a="The fox jumps over the wall.", NEW=World}</span></td>
+		<td><span class="pass">false</span></td>
+		<td><span class="pass">false</span></td>
+	</tr>
+</table>
+<br/><br/><h4>Look in the collapsed setup how the mapping between column names and method names is done.</h4>
+The magic is done with two variables:<br/>SLIM_DT_SETTER  -  for input columns<br/>SLIM_DT_GETTER  - for output columns<br/><br/>For each variable you can define a list of <i>Method Extractor Rules</i> in JSON format. A Method Extractor Rule has 3 properties:<br/>1. Scope - a regular expression which identifies all columns for which this extractor should be applied.<br/>2. Target Name - a replacement string for the "Column Name" regular expression. This will be passed to the Disgracer to generate the final method name.<br/>3. Parameters - a colon separated list of parameters passed to the method called. <br/><br/>The list of rules is preceded with a version number <i>Format Version</i>. This must currently be always "1.0". <br/>Future versions might define additional features and will require a different version number. <br/><br/>If no Method Extractor Rule matches the current column name than the default rules of the Decision Table are used ("set " + column name).<br/><br/>The Hybrid Decision Table is no new table type but it modifies the behavior of the decision table with the help of the above variables.<br/>This has the advantage that you don't need to specify the table type in your test cases<br/>and leaves the decision to the implementer of the test cases if he wants to use a hybrid, dynamic or normal decision table.<br/><br/><br/><h4>IMPORTANT: to avoid side effects always add a <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown">&gt;TearDown</a> page to reset the mappings to the defaults.</h4>
+<br/><br/><h2>Warning: The Hybrid Decision Table is still experimental</h2>
+The way how the method names are configured (via variables) might change.<br/>Be prepared to refactor your tests if you use this feature.<br/>Your ideas for a final solution are welcome please give feedback on the <a href="https://groups.yahoo.com/neo/groups/fitnesse/info">FitNesse mail group</a><br/><br/><br/><br/>Further Reading:<br/><div class="contents">
+	<b>Contents:</b>
+	<ul class="toc1">
+		<li>
+			<a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.ImplementDynamicDecisionTableWithHybridTable" class="test">Implement Dynamic Decision Table With Hybrid Table +</a>
+		</li>
+		<li>
+			<a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.MethodExtractorRuleTest" class="test">Method Extractor Rule Test +</a>
+		</li>
+		<li>
+			<a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.SetUp" class="static">Set Up</a>
+		</li>
+		<li>
+			<a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown" class="static">Tear Down</a>
+			<span class="pageHelp">: Reset DT Getter and Setter variables</span>
+		</li>
+	</ul>
+</div>
+<br/><div class="collapsible closed teardown"><ul><li><a href='#' class='expandall'>Expand</a></li><li><a href='#' class='collapseall'>Collapse</a></li></ul>
+	<p class="title">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.HybridDecisionTable.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=" class="edit">(edit)</a></p>
+	<div>Reset variables to get normal behaviour back.<br/><span class="meta">variable defined: SLIM_DT_GETTER=</span>
+<br/><span class="meta">variable defined: SLIM_DT_SETTER=</span>
+<br/></div>
+</div>
+</article></body></html>

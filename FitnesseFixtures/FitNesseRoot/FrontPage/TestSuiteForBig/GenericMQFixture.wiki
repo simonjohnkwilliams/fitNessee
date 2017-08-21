@@ -1,0 +1,12 @@
+---
+Test
+---
+Test 1 - Pick up the file from a local DIR and put it on the MQ 
+
+Put the file on the message queue then return the message ID to the fixture. This will show if we put the message on the queue correctly
+
+!|PutMessageToMQ|
+|configFile|localFilePath|queueName|isSuccess?|error?|MessageId|
+|${CREDENTIALS_FILE}|input/ptp.xml|QUEUE1|true|null||
+
+<test page>
